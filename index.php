@@ -892,7 +892,7 @@ body.outlook p {
                         <table class="twelve columns">
                           <tr>
                             <td class="twelve pull-two sub-columns" >
-                              <img src="http://data.lohud.com/kaitest/rocklandangle/RockAnglelogo.png" style="height:14em;">
+                              <img src="http://data.lohud.com/newsletter/RockAnglelogo.png" style="height:14em;">
                             </td>
 
                             <td class="expander"></td>
@@ -908,7 +908,7 @@ body.outlook p {
             </tr>
           </table>
 
-          <table class="container">
+          <table class="container" style="margin-bottom:15px;">
             <tr>
               <td>
                 <table class="row">
