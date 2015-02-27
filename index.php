@@ -5,7 +5,7 @@
 <meta name="apple-mobile-web-app-title" content="The Rockland Angle"> <!-- sets the bookmark title for iOS -->
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <meta name="keywords" content="lohud.com,Westchester, Rockland, Putnam,New York,News,local news,headlines,stories,world news" />
-<!-- <meta name="description" content="THIS IS MY PLACEHOLDER TEXT. THERE ARE MANY PLACEHOLDER TEXTS BUT THIS IS MINE." /> -->
+<meta name="description" content="The Rockland Angle Newsletter" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta http-equiv="pragma" content="no-cache"/>
 <meta http-equiv="expires" content="0"/>
@@ -844,15 +844,6 @@ body.outlook p {
     img.floatright { float: right; margin: 0 0 0 10px; }
     cite {float: right; font-size: 11px; color: #707070}
 
-    /*.news {color:rgb(0, 155, 255);}
-    .sports {color:rgb(184, 24, 0);}
-    .life {color:rgb(150, 0, 180);}
-    .money {color:rgb(0, 165, 60);}
-    .tech {color:rgb(250, 102, 0);}
-    .travel {color:rgb(0, 195, 195);}
-    .opinion {color:rgb(102, 102, 102);}
-    .weather {color:rgb(255, 192, 0);}*/
-
     /* base project classes */
     .outter-wrap {background:#fff; margin: 0 auto 20px; padding: 0; width: 100%; max-width:918px; border: 1px solid #ccc; border-top: none; position: relative;}
     .outter-wrap:before {
@@ -882,72 +873,6 @@ body.outlook p {
 
 
   </style>
-<script type="text/javascript">
-
-    var feedData;
-
-    var pullFeed = new XMLHttpRequest();
-    pullFeed.onload = reqListener;
-    pullFeed.open("get", "http://api-internal.usatoday.com/PresentationService/v3/sites/PWES/fronts/newsletter_rockland/layouts?apiKey=newsletterrockland", true);
-    pullFeed.send();
-
-    function reqListener(e) {
-        feedData = JSON.parse(this.responseText);
-        // console.log(feedData);
-        var items = feedData.layoutModules;
-        var assets = [];
-        for(var i = 0; i < items.length ; i++){
-            for(var x = 0, y = items[i].contents.length; x < y; x++){
-                assets.push(items[i].contents[x].id);
-           }
-        }
-        console.log(assets);
-
-        var feed = "http://api.gannett-cdn.com/prod/Search/v4/assets/proxy?fq=statusname:published&fq=sitecode:PWES&sc=PWES&apiKey=search-recipe&debug=true&format=json&fq=assettypename:text&fq={!terms f=assetid}"+assets+"&format=json&api_key=sshzqnyv3sexjez495684agd";
-
-        console.log(feed);
-        var searchData
-        var pullSearch = new XMLHttpRequest();
-        pullSearch.onload = reqListener2;
-        pullSearch.open("get", feed, true);
-        pullSearch.send();
-
-        function reqListener2(e) {
-          searchData = JSON.parse(this.responseText);
-          var news = document.getElementsByClassName("mail")[0];
-          var stories = searchData.results;
-          console.log(stories);
-          for(var s = 0; s < stories.length; s++) {
-              var head = document.createElement("tr");
-              head.innerHTML = "<td class='wrapper'><table class='four columns'><tr><td class='left-text-pad'><img src='" + stories[s].photo.crops.front_thumb + "'/></img></td></tr></table></td></tr><tr><td class='wrapper'><table class='eight columns'><tr><td class='right-text-pad'><h4 style='font-size:1.4em;'><a href='" +stories[s].urls.mobileUrl + "?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>" + stories[s].headline + "</a></h4>" + "<p><i style='font-size:.8em;'>Author: " + stories[s].attribution.author + " | " + stories[s].attribution.publication + "</i></p>" + "<p style='font-size:1.2em;'>" + stories[s].promoBrief + "</p>" + "<p><a href='" + stories[i].urls.mobileUrl + "?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read more here</a></p>" + "</td></tr></table></td><hr>";
-              news.appendChild(head);
-          }
-        }
-
-        // var feedStart = "http://api.gannett-cdn.com/prod/Search/v4/assets/proxy?fq=statusname:published&fq=sitecode:PWES&sc=PWES&apiKey=search-recipe&debug=true&format=json&fq=assettypename:text&fq=assetid:";
-        // var feedEnd = "&format=json&api_key=sshzqnyv3sexjez495684agd";
-
-        // for(var a = 0; a < assets.length; a++){
-        //   console.log(feedStart+assets[a]+feedEnd);
-        // }
-
-        // console.log(feed);
-
-        // for(var i = 0; i < items.length; i++) {
-        //     var head = document.createElement("tr");
-        //     head.innerHTML = "<td class='wrapper'><table class='four columns'><tr><td class='left-text-pad'><img src='" + items[i].contents.promoImage.absoluteUri + "'/></img></td></tr></table></td></tr><tr><td class='wrapper'><table class='eight columns'><tr><td class='right-text-pad'><h4 style='font-size:1.4em;'><a href='" +items[i].urls.mobileUrl + "?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>" + items[i].contents.headline + "</a></h4>" + "<p><i style='font-size:.8em;'>Author: " + items[i].attribution.author + " | " + items[i].attribution.publication + "</i></p>" + "<p style='font-size:1.2em;'>" + items[i].promoBrief + "</p>" + "<p><a href='" + items[i].urls.mobileUrl + "?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read more here</a></p>" + "</td></tr></table></td><hr>";
-        //     news.appendChild(head);
-        // }
-    }
-
-    
-
-    // var searchData;
-    // var pullSearch = new XMLHttpRequest();
-    // pullSearch.onload = reqListener2;
-    // pullSearch.open("get", )
-
-</script>
 </head>
 <body>
   <table class="body">
@@ -969,9 +894,7 @@ body.outlook p {
                             <td class="twelve pull-two sub-columns" >
                               <img src="http://data.lohud.com/kaitest/rocklandangle/RockAnglelogo.png" style="height:14em;">
                             </td>
-                            <!-- <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                                <span class="template-label">The Rockland Angle</span>
-                            </td> -->
+
                             <td class="expander"></td>
                           </tr>
                         </table>
@@ -987,50 +910,76 @@ body.outlook p {
 
           <table class="container">
             <tr>
-              <td class="">
-                <table class="row mail">
-                  
-                </table>
-              </td>
+              <td>
+                <table class="row">
+                  <?php
+                  $file = fopen("apikeys.txt", "r");
+                  while(! feof($file)) {
+                    $readarr = fgets($file);
+                    $readarr = explode('|',$readarr);
+                    $api1 = $readarr[0];
+                    $api2 = $readarr[1];
+                  }
+                  $json1 = file_get_contents("http://api-internal.usatoday.com/PresentationService/v3/sites/PWES/fronts/newsletter_rockland/layouts?apiKey=".$api1);
+                  $data1 = json_decode($json1, true);
+                  $assets = array();
 
-            </tr>
-          </table>
-          <table class="row">
-            <tr>
-              <td class="wrapper last">
+                  for ($i=0; $i< count($data1['layoutModules']); $i++){
+                      for ($x=0; $x < count($data1['layoutModules'][$i]['contents']); $x++){
+                          array_push($assets, $data1['layoutModules'][$i]['contents'][$x]['id']);
+                      }
+                  }
+                  $assets_comma_string = implode ("%20", $assets);
+                  $searchv4 = "http://api.gannett-cdn.com/prod/Search/v4/assets/proxy?fq=statusname:published&fq=sitecode:PWES&sc=PWES&apiKey=search-recipe&debug=false&format=json&fq=assettypename:text&fq=assetid:(".$assets_comma_string.")&sort=initialpublished%20desc&format=json&api_key=".$api2;
+                  $json2 = file_get_contents($searchv4);
+                    
+                  $data2 = json_decode($json2, true);
 
-                <table class="twelve columns">
+                  $stories = $data2['results'];
+                  for($s = 0; $s < count($stories); $s++){
+                    echo "
                   <tr>
-                    <td align="center">
-                      <center>
-                        <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Subscribe</a> | <a href="#">Unsubscribe</a></p>
-                      </center>
+                    <td class='wrapper'>
+                      <table class='four columns'>
+                        <tr>
+                          <td class='left-text-pad'>
+                          <h5 style='font-size:11px; display:inline-block; padding:1px; margin:1px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
+                          .
+                          (($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']))
+                          .
+                          "</h5>
+                            <img src='".$stories[$s]['photo']['crops']['front_thumb']."'/></img>
+                          </td>
+                        </tr>
+                      </table>
                     </td>
-                    <td class="expander"></td>
+                    <td class='wrapper'>
+                      <table class='eight columns'>
+                        <tr>
+                          <td class='right-text-pad'>
+                            <h4 style='font-size:1.4em;padding-top:16px;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                            "
+                            .
+                            (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                            .
+                            "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
+                            <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
                   </tr>
+                  ";
+                    };
+                      ?>
                 </table>
-
               </td>
+
             </tr>
           </table>
         </center>
       </td>
     </tr>
   </table>
-
-
-<!--   <div class="row">
-    <div class="large-6 push-3 columns head-wrap" id="header">
-      <h3>The Rockland Angle</h3>
-      <div class="news-story"></div>
-      
-
-    </div>
-  </div>
-  <div class="large-12 columns" id="main-footer">
-      <div id="main-footer-inner">
-      &copy;2015 lohud.com. All rights reserved. Questions or comments? Email <a href="mailto:jteoh@lohud.com">jteoh@lohud.com</a>. Users of this site agree to the <a target="_top" href="http://static.lohud.com/terms/">Terms of Service</a>, <a target="_top" href="http://static.lohud.com/privacy/">Privacy Notice</a>, and <a target="_top" href="http://static.lohud.com/privacy/#adchoices">Ad Choices</a>
-      </div>
-  </div> -->
 </body>
 </html>
