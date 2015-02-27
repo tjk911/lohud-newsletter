@@ -3,6 +3,9 @@ Lohud Newsletter
 
 Lohud's newsletter script to pull content from a curated Presto front.
 
+Current live version viewable here: http://data.lohud.com/newsletter/rocklandangle/
+
+
 Project code
 ==============
 
