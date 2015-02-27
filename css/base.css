@@ -1,0 +1,119 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	/*font: inherit;*/
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+html, body {
+	line-height: 1;
+    width: 100% !important;
+	height: 100%;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	margin: 0;
+}
+
+@font-face {
+    font-family: 'Futura Today';
+    src: url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_normal.eot);
+    src: url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_normal.eot?#iefix) format('embedded-opentype'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_normal.woff) format('woff'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_normal.ttf) format('truetype'), url(../../fonts/futura_bold-webfont.svg#FuturaBold) format('svg');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura Today Light';
+    src: url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_light.eot);
+    src: url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_light.eot?#iefix) format('embedded-opentype'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_light.woff) format('woff'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_light.ttf) format('truetype'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_light-webfont.svg#FuturaLight) format('svg');
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura Today Bold';
+    src: url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_bold.eot);
+    src: url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_bold.eot?#iefix) format('embedded-opentype'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_bold.woff) format('woff'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_today_bold.ttf) format('truetype'), url(http://i.usatoday.net/news/graphics/elections-2012-app/static/fonts/futura_bold-webfont.svg#FuturaBold) format('svg');
+    font-style: normal;
+}
+
+/* Primary Styles */
+body {font: 12px/1.231 Arial, Helvetica, sans-serif;}
+h1, h2, h3, h4, h5, h6 {color:#333;}
+h1 {font-weight: 700; font-size: 36px;}
+h3 {font-family: 'helvetica','arial',sans-serif; font-weight: 700; color: #333; margin: 5px 0 3px;}
+p {font: normal 12px/1.5 'arial','helvetica',sans-serif; color: #666;}
+strong {font-weight: 700;}
+a {text-decoration: none;}
+
+img {border: 0; max-width: 100%;}
+img.floatleft { float: left; margin: 0 10px 0 0; }
+img.floatright { float: right; margin: 0 0 0 10px; }
+cite {float: right; font-size: 11px; color: #707070}
+
+/*.news {color:rgb(0, 155, 255);}
+.sports {color:rgb(184, 24, 0);}
+.life {color:rgb(150, 0, 180);}
+.money {color:rgb(0, 165, 60);}
+.tech {color:rgb(250, 102, 0);}
+.travel {color:rgb(0, 195, 195);}
+.opinion {color:rgb(102, 102, 102);}
+.weather {color:rgb(255, 192, 0);}*/
+
+/* base project classes */
+.outter-wrap {background:#fff; margin: 0 auto 20px; padding: 0; width: 100%; max-width:918px; border: 1px solid #ccc; border-top: none; position: relative;}
+.outter-wrap:before {
+	content:""; 
+	display: block; 
+	border-top:10px solid rgb(0, 155, 255); 
+	position: relative; 
+	width: 100.2%; 
+	left: -1px;
+}
+
+.head-wrap {
+	padding: 0; 
+	margin: 0 0 18px 0;
+}
+.head-wrap h1 {font: 700 32px/34px 'helvetica','arial',sans-serif; margin:0; padding: 15px 0 0;}
+.head-wrap h2{font: 20px 'Futura Today Bold', Arial, Helvetica, sans-serif; padding: 15px 20px 0; text-transform: uppercase;}
+.head-wrap p {margin: 7px 20px;}
+
+.main-content-wrap {display: block; margin: 0 20px;}
+.main-content-wrap p {margin: 0 0 20px;}
+
+.footer-wrap {padding: 10px; margin: 20px 0 0; background: #ececec; min-height: 20px;}
+.footer-wrap h6 {float: left; color: #999; font: normal 11px/1.5 arial, Helvetica, sans-serif; margin: 2px 0 0 10px; width: 80%;}
+.footer-wrap h6 strong {font-weight: 700;}
+.footer-wrap a.credits_btn {background: url('../graphics/btns/info-btn/base.png'); cursor: pointer; display: block; float: right; height: 23px; width: 23px;}
