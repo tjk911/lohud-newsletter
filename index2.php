@@ -1,17 +1,3 @@
-<?php
-/***************************************
-PRESTO ARTICLE GRABBER
-BY: JESSE HAZEL
-1/16/2015
-
-THIS SCRIPT REACHES INTO PRESTO DATABASE AND 
-PULLS A LIST OF ARTICLES BASED ON KEYWORD
-AND RETURNS ALL ARTICLES IN DESCENDING ORDER
-****************************************/
-
-
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,7 +5,7 @@ AND RETURNS ALL ARTICLES IN DESCENDING ORDER
 <meta name="apple-mobile-web-app-title" content="The Rockland Angle"> <!-- sets the bookmark title for iOS -->
 <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 <meta name="keywords" content="lohud.com,Westchester, Rockland, Putnam,New York,News,local news,headlines,stories,world news" />
-<!-- <meta name="description" content="THIS IS MY PLACEHOLDER TEXT. THERE ARE MANY PLACEHOLDER TEXTS BUT THIS IS MINE." /> -->
+<meta name="description" content="The Rockland Angle Newsletter" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <meta http-equiv="pragma" content="no-cache"/>
 <meta http-equiv="expires" content="0"/>
@@ -757,8 +743,8 @@ body.outlook p {
     }
 
     .callout .panel {
-      background: #ECF8FF;
-      border-color: #b9e5ff;
+      background: #ECF8FF !important;
+      border-color: #b9e5ff !important;
     }
 
     .header {
@@ -893,38 +879,29 @@ body.outlook p {
     <tr>
       <td class="center" align="center" valign="top">
         <center>
-
           <table class="row" style="height:150%">
             <tr>
               <td class="center" align="center">
                 <center>
-
                   <table class="container" style="width:601px; margin-top:15px;">
                     <tr>
                       <td class="wrapper last">
-
                         <table class="twelve columns">
                           <tr>
                             <td class="twelve pull-two sub-columns" >
-                              <img src="http://data.lohud.com/kaitest/rocklandangle/RockAnglelogo.png" style="height:14em;">
+                              <img src="http://data.lohud.com/newsletter/rocklandangle/RockAnglelogo.png" style="height:14em;">
                             </td>
-                            <!-- <td class="six sub-columns last" style="text-align:right; vertical-align:middle;">
-                                <span class="template-label">The Rockland Angle</span>
-                            </td> -->
                             <td class="expander"></td>
                           </tr>
                         </table>
-
                       </td>
                     </tr>
                   </table>
-
                 </center>
               </td>
             </tr>
           </table>
-
-          <table class="container">
+          <table class="container" style="margin-bottom:15px;">
             <tr>
               <td>
                 <table class="row">
@@ -938,7 +915,6 @@ body.outlook p {
                   }
                   $json1 = file_get_contents("http://api-internal.usatoday.com/PresentationService/v3/sites/PWES/fronts/newsletter_rockland/layouts?apiKey=".$api1);
                   $data1 = json_decode($json1, true);
-                  // print_r($data1);
                   $assets = array();
 
                   for ($i=0; $i< count($data1['layoutModules']); $i++){
@@ -946,20 +922,13 @@ body.outlook p {
                           array_push($assets, $data1['layoutModules'][$i]['contents'][$x]['id']);
                       }
                   }
-                  // print_r($assets);
                   $assets_comma_string = implode ("%20", $assets);
-                  // print_r($assets_comma_string);
                   $searchv4 = "http://api.gannett-cdn.com/prod/Search/v4/assets/proxy?fq=statusname:published&fq=sitecode:PWES&sc=PWES&apiKey=search-recipe&debug=false&format=json&fq=assettypename:text&fq=assetid:(".$assets_comma_string.")&sort=initialpublished%20desc&format=json&api_key=".$api2;
-                  // print_r($searchv4);
                   $json2 = file_get_contents($searchv4);
                     
                   $data2 = json_decode($json2, true);
-                  // print_r($data2);
-                  // echo(json_encode($data2, JSON_PRETTY_PRINT));
 
                   $stories = $data2['results'];
-                  // print_r($stories);
-                  // print_r(count($stories));
                   for($s = 0; $s < count($stories); $s++){
                     echo "
                   <tr>
@@ -998,28 +967,73 @@ body.outlook p {
                       ?>
                 </table>
               </td>
-
             </tr>
           </table>
-<!--           <table class="row">
+          <table class="container" style="margin-bottom:15px; width:601px;">
             <tr>
-              <td class="wrapper last">
-
-                <table class="twelve columns">
+              <td>
+                <table class="row callout">
                   <tr>
-                    <td align="center">
-                      <center>
-                        <p style="text-align:center;"><a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Subscribe</a> | <a href="#">Unsubscribe</a></p>
-                      </center>
+                    <td class="wrapper">
+                      <table class="four columns">
+                        <tr>
+                          <td class="left-text-pad">
+                            <a href=""><h5>Database 1</h5></a>
+                            <p>Words words</p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
                     </td>
-                    <td class="expander"></td>
+                    <td class="wrapper">
+                      <table class="four columns">
+                        <tr>
+                          <td class="right-text-pad">
+                            <a href=""><h5>Database 2</h5></a>
+                            <p>Words words</p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="wrapper last">
+                      <table class="four columns">
+                        <tr>
+                          <td class="last right-text-pad">
+                            <h5>Connect With Us:</h5>
+                            <table style="width:auto;">
+                              <tr>
+                                <td>
+                                  <a href="http://www.facebook.com/lohud"><img style="width:45px !important; padding-right:5px" src="FB.png"></a>
+                                </td>
+                                <td>
+                                  <a href="http://www.twitter.com/lohud" ><img style="width:45px !important; padding-right:5px; max-width:none !important;" src="TTTR.png"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
                   </tr>
                 </table>
+                <!-- <table class="row callout">
+                  <tr>
+                    <td class="wrapper-last">
 
+                      <table class="twelve columns">
+                        <tr>
+                          
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table> -->
               </td>
             </tr>
-          </table> -->
-        </center>
+          </table>
+       </center>
       </td>
     </tr>
   </table>
