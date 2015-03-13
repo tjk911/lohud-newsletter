@@ -743,8 +743,8 @@ body.outlook p {
     }
 
     .callout .panel {
-      background: #ECF8FF;
-      border-color: #b9e5ff;
+      background: #ECF8FF !important;
+      border-color: #b9e5ff !important;
     }
 
     .header {
@@ -879,35 +879,28 @@ body.outlook p {
     <tr>
       <td class="center" align="center" valign="top">
         <center>
-
           <table class="row" style="height:150%">
             <tr>
               <td class="center" align="center">
                 <center>
-
                   <table class="container" style="width:601px; margin-top:15px;">
                     <tr>
                       <td class="wrapper last">
-
                         <table class="twelve columns">
                           <tr>
                             <td class="twelve pull-two sub-columns" >
                               <img src="http://data.lohud.com/newsletter/rocklandangle/RockAnglelogo.png" style="height:14em;">
                             </td>
-
                             <td class="expander"></td>
                           </tr>
                         </table>
-
                       </td>
                     </tr>
                   </table>
-
                 </center>
               </td>
             </tr>
           </table>
-
           <table class="container" style="margin-bottom:15px;">
             <tr>
               <td>
@@ -936,6 +929,14 @@ body.outlook p {
                   $data2 = json_decode($json2, true);
 
                   $stories = $data2['results'];
+
+                  for($counter = 0; $counter < count($stories); $counter++){
+                    if($counter == 0){
+                        $stories[$counter]['ssts']['subSection'] = 'Insert New Label Here';
+                        // echo $stories[$counter]['ssts']['subSection'];
+                    }
+                  };
+
                   for($s = 0; $s < count($stories); $s++){
                     echo "
                   <tr>
@@ -943,7 +944,7 @@ body.outlook p {
                       <table class='four columns'>
                         <tr>
                           <td class='left-text-pad'>
-                          <h5 style='font-size:11px; display:inline-block; padding:1px; margin:1px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
+                          <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
                           .
                           (($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']))
                           .
@@ -957,7 +958,7 @@ body.outlook p {
                       <table class='eight columns'>
                         <tr>
                           <td class='right-text-pad'>
-                            <h4 style='font-size:1.4em;padding-top:16px;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                            <h4 style='font-size:1.4em;padding-top:16px;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
                             "
                             .
                             (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
@@ -974,10 +975,82 @@ body.outlook p {
                       ?>
                 </table>
               </td>
-
             </tr>
           </table>
-        </center>
+          <table class="container" style="margin-bottom:15px; width:601px;">
+            <tr>
+              <td>
+                <table class="row callout">
+                  <tr>
+                    <td class="wrapper" style="padding-left:10px">
+                      <table class="four columns">
+                        <tr>
+                          <td class="right-text-pad">
+                            <a href="http://lohud.nydatabases.com/database/nys-restaurant-inspections?keywords=rockland"><h5>Restaurant Inspections</h5></a>
+                            <p>This database contains information on inspections conducted at food service establishments in New York state over the past six months.</p>
+                            <p><a href="http://lohud.nydatabases.com/database/nys-restaurant-inspections?keywords=rockland">View here</a></p>
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="wrapper" style="padding-left:10px">
+                      <table class="four columns">
+                        <tr>
+                          <td class="left-text-pad">
+                            <a href="http://lohud.nydatabases.com/database/lohud-real-estate?keywords=rockland"><h5>Real Estate</h5></a>
+                            <p>This database contains information about the real estate transactions that occurred in New York state since 1993.</p>
+                            <p><a href="http://lohud.nydatabases.com/database/lohud-real-estate?keywords=rockland">View here</a></p>
+                            
+                          </td>
+                          <td class="expander"></td>
+                        </tr>
+                      </table>
+                    </td>
+                    <td class="wrapper last" style="padding-left:10px">
+                      <table class="four columns">
+                        <tr>
+                          <td class="last right-text-pad">
+                            <h5>Connect With Us:</h5>
+                            <table style="width:auto;">
+                              <tr>
+                                <td>
+                                  <a href="http://www.facebook.com/lohud"><img style="width:45px !important; padding-right:5px" src="FB.png"></a>
+                                </td>
+                                <td>
+                                  <a href="http://www.twitter.com/lohud" ><img style="width:45px !important; padding-right:5px; max-width:none !important;" src="TTTR.png"></a>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <table class="row" style="background-color: #f2f2f2;">
+                  <tr>
+                    <td class="wrapper offset-by-three">
+
+                      <table class="six columns">
+                        <tr>
+                          <td class="center">
+                            <center>
+
+                              <p style="text-align:center !important;"><a href="https://account.lohud.com/newsletter-unsubscribe/?email=%%EmailAddr%%&listId=%%LISTID%%">Unsubscribe</a></p>
+
+                            </center>
+                          </td>
+                        </tr>
+                      </table>
+
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+       </center>
       </td>
     </tr>
   </table>
