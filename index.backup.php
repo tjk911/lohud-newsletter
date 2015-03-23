@@ -911,7 +911,7 @@ body.outlook p {
               </td>
             </tr>
           </table>
-          <table class="container hide-for-small" style="width:601px">
+          <table class="container" style="width:601px">
             <tr>
               <td>
                 <table class="row callout" style="margin-bottom:-10px;">
@@ -965,7 +965,6 @@ body.outlook p {
           <table class="container">
             <tr>
               <td>
-                <table class="show-for-small" style="padding-top:30px;"></table>
                 <table class="row">
                   <?php
                   $jsonIntro = file_get_contents("entries.json");
@@ -982,7 +981,7 @@ body.outlook p {
                         </tr>
                       </table>
                     </td>
-                  </tr>
+                  
                   ";
                       ?>
                 </table>
@@ -993,234 +992,266 @@ body.outlook p {
             <tr>
               <td>
                 <table class="row" style="max-width:600px">
-<?php
-$file = fopen("apikeys.txt", "r");
-while(! feof($file)) {
-  $readarr = fgets($file);
-  $readarr = explode('|',$readarr);
-  $api1 = $readarr[0];
-  $api2 = $readarr[1];
-}
-$json1 = file_get_contents("http://api-internal.usatoday.com/PresentationService/v3/sites/PWES/fronts/newsletter_rockland/layouts?apiKey=".$api1);
-$array1 = json_decode($json1, true);
-$assets = array();
+                  <?php
+                  $file = fopen("apikeys.txt", "r");
+                  while(! feof($file)) {
+                    $readarr = fgets($file);
+                    $readarr = explode('|',$readarr);
+                    $api1 = $readarr[0];
+                    $api2 = $readarr[1];
+                  }
+                  $json1 = file_get_contents("http://api-internal.usatoday.com/PresentationService/v3/sites/PWES/fronts/newsletter_rockland/layouts?apiKey=".$api1);
+                  $data1 = json_decode($json1, true);
+                  $assets = array();
 
-for ($i=0; $i < count($array1['layoutModules']); $i++){
-    for ($x=0; $x < count($array1['layoutModules'][$i]['contents']); $x++){
-        $assets[] = $array1['layoutModules'][$i]['contents'][$x]['id'];
-    };
-};
+                  for ($i=0; $i< count($data1['layoutModules']); $i++){
+                      for ($x=0; $x < count($data1['layoutModules'][$i]['contents']); $x++){
+                          array_push($assets, $data1['layoutModules'][$i]['contents'][$x]['id']);
+                      }
+                  }
+                  $assets_comma_string = implode ("%20", $assets);
+                  $searchv4 = "http://api.gannett-cdn.com/prod/Search/v4/assets/proxy?fq=statusname:published&fq=sitecode:PWES&sc=PWES&apiKey=search-recipe&debug=false&format=json&fq=assettypename:text&fq=assetid:(".$assets_comma_string.")&format=json&api_key=".$api2;
+                  $json2 = file_get_contents($searchv4);
 
-$assets_comma_string = implode ("%20", $assets);
+                  $data2 = json_decode($json2, true);
 
-$searchv4 = "http://api.gannett-cdn.com/prod/Search/v4/assets/proxy?fq=statusname:published&fq=sitecode:PWES&sc=PWES&apiKey=newsletter-search&debug=false&format=json&fq=assettypename:text&fq=assetid:(".$assets_comma_string.")&format=json&api_key=".$api2;
-$json2 = file_get_contents($searchv4);
+                  $stories = $data2['results'];
 
-$data2 = json_decode($json2, true);
+                  // echo $searchv4;
 
-$save = file_put_contents('stories.json', serialize($data2['results']));
+                  // for($counter = 0; $counter < count($stories); $counter++){
+                  //   if($counter == 0){
+                  //       $stories[$counter]['ssts']['subSection'] = 'Insert New Label Here';
+                  //       // echo $stories[$counter]['ssts']['subSection'];
+                  //   }
+                  // };
 
-$stories = unserialize(file_get_contents('stories.json'));
-
-for ( $a1 = 0; $a1 < count($assets); $a1++ ) {
-  for ( $s = 0; $s < count($stories); $s++ ) {
-    if ( $a1 == 0 ){
-      if ($assets[$a1] == $stories[$s]['assetId']) {
-          echo "  
-                  <tr>
-                    <td class='wrapper'>
-                      <table class='twelve columns'>
+                  for($s = 0; $s < count($stories); $s++){
+                    if ( $s == 0 ){
+                        echo "
+                      <tr>
+                        <td class='wrapper'>
+                          <table class='four columns'>
+                            <tr>
+                              <td class='left-text-pad' style='padding-bottom:0px;'>
+                              <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
+                              .
+                              (($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']))
+                              .
+                              "</h5>
+                                <img src='".$stories[$s]['photo']['crops']['front_thumb']."' style='max-width:170px; max-height:145px;'/></img>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                        <td class='wrapper'>
+                          <table class='eight columns'>
+                            <tr>
+                              <td class='right-text-pad' style='padding-bottom:0px;'>
+                                <h4 style='font-size:1.4em;padding-top:16px;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                                "
+                                .
+                                (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                                .
+                                "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
+                                <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      
+                      ";
+                    } elseif ( $s == 1 ) {
+                       echo "
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class='container' style='height:150%'>
+                      <tr>
+                        <td class='wrapper'>
+                          <table class='twelve columns'>
+                            <tr>
+                              <td class='left-text-pad' style='padding-bottom:2px;'>
+                                <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
+                                .
+                                (($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']))
+                                .
+                                "</h5>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class='twelve columns'>
+                            <tr>
+                              <td class='left-text-pad'>
+                                <h4 style='font-size:1.4em;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                                "
+                                .
+                                (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                                .
+                                "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
+                                <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      
+                      ";
+                    } elseif ( $s == 2 ) {
+                       echo "
+                      <tr>
+                        <td class='wrapper'>
+                          <table class='twelve columns'>
+                            <tr>
+                              <td class='left-text-pad' style='padding-bottom:2px;'>
+                                <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
+                                .
+                                (($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']))
+                                .
+                                "</h5>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class='twelve columns'>
+                            <tr>
+                              <td class='left-text-pad'>
+                                <h4 style='font-size:1.4em;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                                "
+                                .
+                                (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                                .
+                                "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
+                                <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      
+                      ";
+                    } elseif ( $s == 3 ) {
+                        echo "
+                <tr>
+                  <td class='center' align='center'>
+                    <center>
+                      <table class='container' style='width:601px;'>
                         <tr>
-                          <td class='wrapper'>
-                            <table class='four columns hide-for-small'>
+                          <td class='wrapper last'>
+                            <table class='twelve columns'>
                               <tr>
-                                <td class='left-text-pad' style='padding-bottom:0px;'>
-                                <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>".(($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))."</h5>
-                                  <img src='".$stories[$s]['photo']['crops']['front_thumb']."' style='max-width:170px; max-height:145px;'/></img>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <td class='wrapper'>
-                            <table class='eight columns'>
-                              <tr>
-                                <td class='left-text-pad' style='padding-bottom:0px;padding-left:20px;'>
-                                  <h4 style='font-size:1.4em;padding-top:16px;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
-                                  "
-                                  .
-                                  (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
-                                  .
-                                  "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
-                                  <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                                <td class='twelve pull-two sub-columns' style='padding-left:20%;'>
+                                  <img src='http://pagead2.googlesyndication.com/simgad/12109941488344692062' style='text-align:center;'>
                                 </td>
                               </tr>
                             </table>
                           </td>
                         </tr>
                       </table>
-                      
-                    </td>
+                    </center>
+                  </td>
+                </tr>
+              </table>
+                    <table class='container'>
+                      <tr>
+                        <td class='wrapper'>
+                          <table class='twelve columns'>
+                            <tr>
+                              <td class='left-text-pad' style='padding-bottom:2px;'>
+                                <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
+                                .
+                                (($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']))
+                                .
+                                "</h5>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class='twelve columns'>
+                            <tr>
+                              <td class='left-text-pad'>
+                                <h4 style='font-size:1.4em;padding-top:0px;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                                "
+                                .
+                                (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                                .
+                                "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
+                                <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      ";
+                    } else {
+                        echo "
+                      <tr>
+                        <td class='wrapper'>
+                          <table class='twelve columns'>
+                            <tr>
+                              <td class='left-text-pad' style='padding-bottom:2px;'>
+                                <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
+                                .
+                                (($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']))
+                                .
+                                "</h5>
+                              </td>
+                            </tr>
+                          </table>
+                          <table class='twelve columns'>
+                            <tr>
+                              <td class='left-text-pad'>
+                                <h4 style='font-size:1.4em;padding-top:0px;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                                "
+                                .
+                                (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                                .
+                                "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
+                                <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                              </td>
+                            </tr>
+                          </table>
+                        </td>
+                      </tr>
+                      ";
+                    }
                     
-                  </tr>";
-      }
-    } elseif ( $s == 1 ){
-      if ($assets[$a1] == $stories[$s]['assetId']){
-           echo "
-                </table>
-              </td>
-            </tr>
-          </table>
-          <table class='container' style='height:150%'>
-            <tr>
-              <td class='wrapper'>
-                <table class='twelve columns'>
-                  <tr>
-                    <td class='left-text-pad' style='padding-bottom:2px;'>
-                      <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
-                      .
-                      (($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))
-                      .
-                      "</h5>
-                    </td>
-                  </tr>
-                </table>
-                <table class='twelve columns'>
-                  <tr>
-                    <td class='left-text-pad'>
-                      <h4 style='font-size:1.4em;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
-                      "
-                      .
-                      (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
-                      .
-                      "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
-                      <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>";
-      }
-    } elseif ( $s == 2 ){
-      if ($assets[$a1] == $stories[$s]['assetId']){
-         echo "
-            <tr>
-              <td class='wrapper'>
-                <table class='twelve columns'>
-                  <tr>
-                    <td class='left-text-pad' style='padding-bottom:2px;'>
-                      <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
-                      .
-                      (($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))
-                      .
-                      "</h5>
-                    </td>
-                  </tr>
-                </table>
-                <table class='twelve columns'>
-                  <tr>
-                    <td class='left-text-pad'>
-                      <h4 style='font-size:1.4em;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
-                      "
-                      .
-                      (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
-                      .
-                      "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
-                      <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>";
-      }
-    } elseif ( $s == 3 ){
-      if ($assets[$a1] == $stories[$s]['assetId']){
-        echo "
-            <tr>
-              <td class='center' align='center'>
-                <center>
-                  <table class='container' style='width:601px;'>
-                    <tr>
-                      <td class='wrapper last'>
-                        <table class='twelve columns'>
-                          <tr>
-                            <td class='twelve pull-two sub-columns' style='padding-left:20%;'>
-                              <img src='http://pagead2.googlesyndication.com/simgad/12109941488344692062' style='text-align:center;'>
-                            </td>
-                          </tr>
-                        </table>
-                      </td>
-                    </tr>
-                  </table>
-                </center>
-              </td>
-            </tr>
-          </table>
-          <table class='container'>
-            <tr>
-              <td class='wrapper'>
-                <table class='twelve columns'>
-                  <tr>
-                    <td class='left-text-pad' style='padding-bottom:2px;'>
-                      <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
-                      .
-                      (($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))
-                      .
-                      "</h5>
-                    </td>
-                  </tr>
-                </table>
-                <table class='twelve columns'>
-                  <tr>
-                    <td class='left-text-pad'>
-                      <h4 style='font-size:1.4em;padding-top:0px;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
-                      "
-                      .
-                      (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
-                      .
-                      "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
-                      <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>";
-      }
-    } else {
-      if ($assets[$a1] == $stories[$s]['assetId']){
-          echo "
-            <tr>
-              <td class='wrapper'>
-                <table class='twelve columns'>
-                  <tr>
-                    <td class='left-text-pad' style='padding-bottom:2px;'>
-                      <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
-                      .
-                      (($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))
-                      .
-                      "</h5>
-                    </td>
-                  </tr>
-                </table>
-                <table class='twelve columns'>
-                  <tr>
-                    <td class='left-text-pad'>
-                      <h4 style='font-size:1.4em;padding-top:0px;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
-                      "
-                      .
-                      (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
-                      .
-                      "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
-                      <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
-                    </td>
-                  </tr>
-                </table>
-              </td>
-            </tr>";
-      }
-    }
-  }
-};
-    ?>
+                  };
+
+                    // for($s = 0; $s < count($stories); $s++){
+                    //   echo "
+                    // <tr>
+                    //   <td class='wrapper'>
+                    //     <table class='four columns'>
+                    //       <tr>
+                    //         <td class='left-text-pad'>
+                    //         <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
+                    //         .
+                    //         (($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']))
+                    //         .
+                    //         "</h5>
+                    //           <img src='".$stories[$s]['photo']['crops']['front_thumb']."'/></img>
+                    //         </td>
+                    //       </tr>
+                    //     </table>
+                    //   </td>
+                    //   <td class='wrapper'>
+                    //     <table class='eight columns'>
+                    //       <tr>
+                    //         <td class='right-text-pad'>
+                    //           <h4 style='font-size:1.4em;padding-top:0px;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                    //           "
+                    //           .
+                    //           (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                    //           .
+                    //           "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
+                    //           <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                    //         </td>
+                    //       </tr>
+                    //     </table>
+                    //   </td>
+                    // </tr>
+                    // ";
+                    //   };
+                      ?>
                 </table>
               </td>
             </tr>
@@ -1291,5 +1322,9 @@ for ( $a1 = 0; $a1 < count($assets); $a1++ ) {
               </td>
             </tr>
           </table>
+       </center>
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
