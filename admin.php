@@ -10,7 +10,19 @@ require ('authentication.php');
 <head>
     <meta name="robots" content="noindex, nofollow">
     <title>Admin</title>
+    <script src="http://code.jquery.com/jquery-1.5.js"></script>
+    <script>
+      function countChar(val) {
+        var len = val.value.length;
+        if (len >= 500) {
+          val.value = val.value.substring(0, 280);
+        } else {
+          $('#charNum').text(280 - len + ' characters remaining');
+        }
+      };
+    </script>
 <style>
+
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 .btn { display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; }
 .btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: #e6e6e6; }
@@ -48,7 +60,7 @@ body {
 }
 .login h1 { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
 
-input { 
+textarea { 
   width: 100%; 
   margin-bottom: 10px; 
   background: rgba(0,0,0,0.3);
@@ -67,10 +79,17 @@ input {
   -ms-transition: box-shadow .5s ease;
   transition: box-shadow .5s ease;
 }
-input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
+textarea:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
 #failedMessage {
     text-align: center;
     color:red;
+}
+
+#charNum {
+    font-size: 13px;
+    color: #fff;
+    margin-top:-5px;
+    margin-bottom:5px;
 }
 </style>
 </head>
@@ -80,19 +99,14 @@ input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgb
   <h1><?php echo $appname; ?></h1>
   <div id="failedMessage"><?php echo $fail_message; ?></div>
     <form name="postform" action="submit.php" method="post" enctype="multipart/form-data">
-<!--       <div class="row">
-        <div class="large-4 columns">
-          <label>Headline
-            <input type="text" placeholder="Headline" name="headline" />
-          </label>
-        </div>
-      </div> -->
       <div class="row">
         <div class="large-12 columns" >
           <label style="color:#F2F2F2;">Chatter
-            <input type="text" placeholder="Robert, type your chatter into this box" name="p1"/>
+            <textarea rows="4" type="text" placeholder="Robert, type your chatter into this box." name="p1" style="margin-top:5px;" maxlength="280" onkeyup="countChar(this)" /></textarea>
           </label>
+          <div id="charNum"></div>
         </div>
+
         <button type="submit" value="Submit Entry">Submit entry</button>
         <a href="logout.php"><button>Sign out</button></a>
       </div>

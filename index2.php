@@ -1004,6 +1004,11 @@ while(! feof($file)) {
 $json1 = file_get_contents("http://api-internal.usatoday.com/PresentationService/v3/sites/PWES/fronts/newsletter_rockland/layouts?apiKey=".$api1);
 $array1 = json_decode($json1, true);
 $assets = array();
+$filename = 'stories.json';
+date_default_timezone_set('America/New_York');
+header('Content-Type: application/json');
+$filetime = filemtime($filename);
+
 
 for ($i=0; $i < count($array1['layoutModules']); $i++){
     for ($x=0; $x < count($array1['layoutModules'][$i]['contents']); $x++){
@@ -1013,14 +1018,23 @@ for ($i=0; $i < count($array1['layoutModules']); $i++){
 
 $assets_comma_string = implode ("%20", $assets);
 
-$searchv4 = "http://api.gannett-cdn.com/prod/Search/v4/assets/proxy?fq=statusname:published&fq=sitecode:PWES&sc=PWES&apiKey=newsletter-search&debug=false&format=json&fq=assettypename:text&fq=assetid:(".$assets_comma_string.")&format=json&api_key=".$api2;
-$json2 = file_get_contents($searchv4);
 
-$data2 = json_decode($json2, true);
+if (time() - $filetime >= 60){
+  // echo 'Fresh';
+  $searchv4 = "http://api.gannett-cdn.com/prod/Search/v4/assets/proxy?fq=statusname:published&fq=sitecode:PWES&sc=PWES&apiKey=newsletter-search&debug=false&format=json&fq=assettypename:(text%20gallery)&fq=assetid:(".$assets_comma_string.")&format=json&api_key=".$api2;
+  $json2 = file_get_contents($searchv4);
+  $data2 = json_decode($json2, true);
+  $save = file_put_contents('stories.json', serialize($data2['results']));
+  $stories = unserialize(file_get_contents('stories.json'));
+} else {
+  // echo 'Cached';
+  $stories = unserialize(file_get_contents('stories.json'));
+}
 
-$save = file_put_contents('stories.json', serialize($data2['results']));
+  // print_r($searchv4);
 
-$stories = unserialize(file_get_contents('stories.json'));
+
+
 
 for ( $a1 = 0; $a1 < count($assets); $a1++ ) {
   for ( $s = 0; $s < count($stories); $s++ ) {
