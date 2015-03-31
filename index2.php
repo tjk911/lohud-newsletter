@@ -112,7 +112,7 @@ table.container {
   width: 580px;
   margin: 0 auto;
   text-align: inherit;
-  background-color: #FFFFFF;
+  background-color: #FFFFFF; /*#FFFFFF*/
 }
 
 table.row { 
@@ -333,7 +333,7 @@ img.center {
 
 body, table.body, h1, h2, h3, h4, h5, h6, p, td { 
   color: #222222;
-  font-family: "Helvetica", "Arial", sans-serif; 
+  font-family: "Tahoma", "Geneva", sans-serif; 
   font-weight: normal; 
   padding:0; 
   margin: 0;
@@ -367,7 +367,7 @@ small {
 }
 
 a {
-  color: #2ba6cb; 
+  color: #444; /*2ba6cb*/
   text-decoration: none;
 }
 
@@ -376,7 +376,7 @@ a:hover {
 }
 
 a:active { 
-  color: #2795b6 !important;
+  color: #094078 !important; /*2795b6*/
 }
 
 a:visited { 
@@ -389,7 +389,7 @@ h3 a,
 h4 a, 
 h5 a, 
 h6 a {
-  color: #2ba6cb;
+  color: #444;
 }
 
 h1 a:active, 
@@ -765,11 +765,17 @@ body.outlook p {
     }
 
     table.columns .left-text-pad {
-      padding-left: 20px; /*10px*/
+      padding-left: 10px; /*10px*/
+      padding-right: 10px; /*originally none*/
     }
 
     table.columns .right-text-pad {
       padding-right: 10px;
+    }
+
+    .temp-pad {
+      padding-top:0px !important;
+      padding-left:10px !important;
     }
 
     @media only screen and (max-width: 600px) {
@@ -780,6 +786,14 @@ body.outlook p {
 
       table[class="body"] .left-text-pad {
         padding-right: 10px !important;
+      }
+
+      table[class="body"] .temp-pad {
+        padding-left:0px !important;
+      }
+
+      table[class="body"] .cards {
+        border:none;
       }
     }
 
@@ -831,7 +845,7 @@ body.outlook p {
     }
 
     /* Primary Styles */
-    body {font: 12px/1.231 Arial, Helvetica, sans-serif; background-color: #F2F2F2;}
+    body {font: 12px/1.231 Arial, Helvetica, sans-serif; background-color: #9CC6E3;}
     h1, h2, h3, h4, h5, h6 {color:#333;}
     h1 {font-weight: 700; font-size: 36px;}
     h3 {font-family: 'helvetica','arial',sans-serif; font-weight: 700; color: #333; margin: 5px 0 3px;}
@@ -873,6 +887,14 @@ body.outlook p {
 
 
   </style>
+  <style type="text/css">
+    /*Kai's tweaks*/
+
+    .cards {
+      border: solid 1px;
+      border-color:#888;
+    }
+  </style>
 </head>
 <body>
 <div id='banner' style="height:77px;"></div>
@@ -892,7 +914,7 @@ body.outlook p {
       </tr>
       <!-- end Pre-Header-->
       <tr>
-          <td class="center "style="text-align:center;padding-top:10px;padding-bottom:10px;font-family: Arial, Helvetica, sans-serif;font-weight:bold;color:#272727;font-size:11px;" class="viewOnline">
+          <td class="center "style="text-align:center;padding-top:10px;padding-bottom:10px;font-family: Arial, Helvetica, sans-serif;color:#272727;font-size:11px;" class="viewOnline">
               <center>
                 <span class="block">Having trouble viewing this email?</span> <span class="divider">|</span>
                 <span class="block">
@@ -910,17 +932,17 @@ body.outlook p {
             <tr>
               <td class="center" align="center" >
                 <center>
-                  <table class="container" style="width:601px; margin-top:15px;">
+                  <table class="container" style="width:600px; margin-top:15px;">
                     <tr>
-                      <td class="wrapper last">
-                        <table class="twelve columns">
+                      <td class="wrapper last" style='padding-top:0px;'>
+                        <table class="twelve columns" style='width:600px;'>
                           <tr>
-                            <td class="six pull-two sub-columns" >
-                              <img src="http://data.lohud.com/newsletter/rocklandangle/RockAnglelogo.png" style="height:14em;">
+                            <td > <!-- class="six pull-two sub-columns"  -->
+                              <img src="http://data.lohud.com/newsletter/rocklandangle/header.jpg" style="width:100%"> <!-- height:14em; -->
                             </td>
-                            <td class="four sub-columns" >
+<!--                             <td class="four sub-columns" >
                             <div id="google_image_div" style="overflow:hidden;"><input type="hidden" id="csi" value="1"><a id="aw0" target="_blank" href="http://googleads.g.doubleclick.net/aclk?sa=L&amp;ai=BjrmMxGUMVaSIHZTV0AG8t4CIDuDk5acFAAAAEAEgqLS8FTgAWJiZ0q_UAWDJzryLwKTYD7IBDXd3dy5sb2h1ZC5jb226AQlnZnBfaW1hZ2XIAQLaARVodHRwOi8vd3d3LmxvaHVkLmNvbS_AAgLgAgDqAjU3MTAzL255LXdlc3RjaGVzdGVyLUMxMDg0L3Nwb25zb3JfbG9nb19mcm9udC9ob21lcGFnZfgC_tEegAMBkAPgA5gD4AOoAwHIA5kE4AQBoAYU2AcB&amp;num=0&amp;sig=AOD64_2rzrjHktIjZ0tkkSsledBZ7O5nNQ&amp;client=ca-pub-7521520845913646&amp;adurl=http://www.lohud.com/topic/49996761-121c-48ec-8fde-e828c7f3d592/&amp;nm=4&amp;nx=23&amp;ny=22&amp;mb=2" onfocus="ss('aw0')" onmousedown="st('aw0')" onmouseover="ss('aw0')" onclick="ha('aw0')"><img src="http://pagead2.googlesyndication.com/simgad/3553462799865101815" border="0" width="100" height="50" alt="" class="img_ad" onload="tick('1ad')" style="float:right;"></a></div>
-                            </td>
+                            </td> -->
                           </tr>
                         </table>
                       </td>
@@ -930,80 +952,58 @@ body.outlook p {
               </td>
             </tr>
           </table>
-          <table class="container hide-for-small" style="width:601px">
-            <tr>
-              <td>
-                <table class="row callout" style="margin-bottom:-10px;">
-                  <tr>
-                    <td class="wrapper" style="padding-left:10px;">
-                      <table class="three columns">
-                        <tr>
-                          <td>
-                            <h5 style="padding-left:10px; margin-top:6.2px;font-size:1.6em;">Databases:</h5>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td class="wrapper" style="padding-left:10px;">
-                      <table class="four columns">
-                        <tr>
-                          <td class="left-text-pad">
-                            <table class="button four columns">
-                              <tr>
-                                <td>
-                                  <a href="http://lohud.nydatabases.com/database/nys-restaurant-inspections?keywords=rockland" style="font-size:.9em;">Restaurant Inspections</a>
-                                </td>
-                              </tr>
-                            </table>
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                    </td>
-                    <td class="wrapper" style="padding-right:10px;">
-                      <table class="four columns">
-                        <tr>
-                          <td class="right-text-pad">
-                            <table class="button four columns">
-                              <tr>
-                                <td>
-                                  <a href="http://lohud.nydatabases.com/database/lohud-real-estate?keywords=rockland" style="font-size:.9em;">Real Estate</a>
-                                </td>
-                              </tr>
-                            </table>                            
-                          </td>
-                          <td class="expander"></td>
-                        </tr>
-                      </table>
-                    </td>
-                  </table>
-                </td>
-              </tr>
-            </table>
           <table class="container">
             <tr>
               <td>
-                <table class="show-for-small" style="padding-top:30px;"></table>
-                <table class="row">
+                <table class="row" style='width:600px; padding-bottom:10px;'>
                   <?php
                   $jsonIntro = file_get_contents("entries.json");
                   $jsondata = json_decode($jsonIntro, true);
                   
                   echo "
                   <tr>
-                    <td class='wrapper'>
-                      <table class='twelve columns'>
+                    <td class='wrapper last temp-pad'>
+                      <table class='twelve columns cards'>
                         <tr>
-                          <td class='left-text-pad'>
-                            <p style='font-size:1.25em;text-indent:20px;'>".$jsondata['p1']."</p>
+                          <td style='padding-bottom:0px;'>
+                            <div style='padding-top:3px; padding-bottom:3px; margin-bottom:2px; background-color:#0074BE;width:100%;'>
+                              <h5 style='font-size:1.2em; color:#fff; display:inline-block; font-family:Tahoma, Geneva, sans-serif; padding-left:10px;'>TODAY IN ROCKLAND</h5>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='left-text-pad' style='padding-top:10px;'>
+                            <p style='font-size:1.25em;text-indent:20px;font-family:Times New Roman, serif;'>".$jsondata['p1']."</p>
                           </td>
                         </tr>
                       </table>
+                      <hr>
                     </td>
                   </tr>
                   ";
                       ?>
+                </table>
+                <table class='row' style='width:600px; padding-bottom:10px;'>
+                  <tr>
+                    <td class='center' align='center'>
+                      <center>
+                        <table class='container'>
+                          <tr>
+                            <td class='wrapper last temp-pad'>
+                              <table class='twelve columns'>
+                                <tr>
+                                  <td class='center' align='center' style='padding-bottom:3px;'>
+                                    <img class='center' src='http://pagead2.googlesyndication.com/simgad/12109941488344692062' style='text-align:center;'>
+                                  </td>
+                                  <td class='expander'></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                        </table>
+                      </center>
+                    </td>
+                  </tr>
                 </table>
               </td>
             </tr>
@@ -1059,38 +1059,49 @@ body.outlook p {
                             <table class='container'>
                               <tr>
                                 <td>
-                                  <table class='row' style='max-width:600px'> 
+                                  <table class='row' style='width:600px; padding-bottom:10px;'> 
                                     <tr>
-                                      <td class='wrapper'>
-                                        <table class='twelve columns'>
+                                      <td class='wrapper last temp-pad'>
+                                        <table class='twelve columns cards'>
                                           <tr>
-                                            <td class='wrapper'>
-                                              <table class='four columns hide-for-small'>
+                                            <td style='padding-bottom:0px;'>
+                                              <div style='padding-top:3px; padding-bottom:3px; margin-bottom:2px; background-color:#0074BE;width:100%;'>
+                                                <h5 style='font-size:1.2em; color:#fff; display:inline-block; font-family:Tahoma, Geneva, sans-serif; padding-left:10px;'>".(($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))."</h5>
+                                              </div>
+                                              <table class='twelve columns'>
                                                 <tr>
-                                                  <td class='left-text-pad' style='padding-bottom:0px;'>
-                                                  <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>".(($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))."</h5>
-                                                    <img src='".$stories[$s]['photo']['crops']['front_thumb']."' style='max-width:170px; max-height:145px;'/></img>
+                                                  <td class='wrapper last temp-pad hide-for-small'>
+                                                    <table class='five columns'>
+                                                      <tr>
+                                                        <td>
+                                                          <img class='hide-for-small' src='".$stories[$s]['photo']['crops']['front_thumb']."' style='width:260px; max-height:223px; padding-top:15px;'/></img>
+                                                        </td>
+                                                        <td class='expander'></td>
+                                                      </tr>
+                                                    </table>
                                                   </td>
-                                                </tr>
-                                              </table>
-                                            </td>
-                                            <td class='wrapper'>
-                                              <table class='eight columns'>
-                                                <tr>
-                                                  <td class='left-text-pad' style='padding-bottom:0px;padding-left:20px;'>
-                                                    <h4 style='font-size:1.4em;padding-top:16px;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
-                                                    "
-                                                    .
-                                                    (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
-                                                    .
-                                                    "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
-                                                    <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                                                  <td class='wrapper last'>
+                                                    <table class='seven columns'>
+                                                      <tr>
+                                                        <td class='left-text-pad'>
+                                                          <h4 style='font-size:1.4em;padding-top:10px;display:inline-block;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                                                            "
+                                                            .
+                                                            (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                                                            .
+                                                            "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
+                                                            <p><u><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>READ STORY</a></u></p>
+                                                        </td>
+                                                        <td class='expander'></td>
+                                                      </tr>
+                                                    </table>
                                                   </td>
                                                 </tr>
                                               </table>
                                             </td>
                                           </tr>
                                         </table>
+                                        <hr>
                                       </td>
                                     </tr>
                                   </table>
@@ -1101,36 +1112,34 @@ body.outlook p {
                       } elseif ( $s == 1 ){
                         if ($assets[$a1] == $stories[$s]['assetId']){
                              echo "
+
                             <table class='container'>
                               <tr>
                                 <td>
-                                  <table class='row'>
+                                  <table class='row' style='width:600px; padding-bottom:10px;'>
                                     <tr>
-                                      <td class='wrapper'>
-                                        <table class='twelve columns'>
+                                      <td class='wrapper last temp-pad'>
+                                        <table class='twelve columns cards'>
                                           <tr>
-                                            <td class='left-text-pad' style='padding-bottom:2px;'>
-                                              <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
-                                              .
-                                              (($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))
-                                              .
-                                              "</h5>
+                                            <td style='padding-bottom:0px;'>
+                                              <div style='padding-top:3px; padding-bottom:3px; margin-bottom:2px; background-color:#0074BE;width:100%;'>
+                                                <h5 style='font-size:1.2em; color:#fff; display:inline-block; font-family:Tahoma, Geneva, sans-serif; padding-left:10px;'>".(($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))."</h5>
+                                              </div>
                                             </td>
                                           </tr>
-                                        </table>
-                                        <table class='twelve columns'>
                                           <tr>
-                                            <td class='left-text-pad'>
-                                              <h4 style='font-size:1.4em;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                                            <td class='left-text-pad' style='padding-top:10px;'>
+                                              <h4 style='font-size:1.4em;display:inline-block;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
                                               "
                                               .
                                               (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
                                               .
                                               "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
-                                              <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                                              <p><u><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>READ STORY</a></u></p>
                                             </td>
                                           </tr>
                                         </table>
+                                        <hr>
                                       </td>
                                     </tr>
                                   </table>
@@ -1144,101 +1153,98 @@ body.outlook p {
                            <table class='container'>
                               <tr>
                                 <td>
-                                  <table class='row'>
+                                  <table class='row' style='width:600px; padding-bottom:10px;'>
                                     <tr>
-                                      <td class='wrapper'>
-                                        <table class='twelve columns'>
+                                      <td class='wrapper last temp-pad'>
+                                        <table class='twelve columns cards'>
                                           <tr>
-                                            <td class='left-text-pad' style='padding-bottom:2px;'>
-                                              <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
-                                              .
-                                              (($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))
-                                              .
-                                              "</h5>
+                                            <td style='padding-bottom:0px;'>
+                                              <div style='padding-top:3px; padding-bottom:3px; margin-bottom:2px; background-color:#0074BE;width:100%;'>
+                                                <h5 style='font-size:1.2em; color:#fff; display:inline-block; font-family:Tahoma, Geneva, sans-serif; padding-left:10px;'>".(($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))."</h5>
+                                              </div>
                                             </td>
                                           </tr>
-                                        </table>
-                                        <table class='twelve columns'>
-                                          <tr>
-                                            <td class='left-text-pad'>
-                                              <h4 style='font-size:1.4em;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                                            <td class='left-text-pad' style='padding-top:10px;'>
+                                              <h4 style='font-size:1.4em;display:inline-block;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
                                               "
                                               .
                                               (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
                                               .
                                               "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
-                                              <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                                              <p><u><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>READ STORY</a></u></p>
                                             </td>
                                           </tr>
                                         </table>
-                                      </td>
-                                    </tr>
-                                  </table>
-                                  <table class='row'>
-                                    <tr>
-                                      <td class='center' align='center'>
-                                        <center>
-                                          <table class='container'>
-                                            <tr>
-                                              <td class='wrapper last'>
-                                                <table class='twelve columns'>
-                                                  <tr>
-                                                    <td class='center' align='center' style='padding-bottom:2px;'>
-                                                      <img class='center' src='http://pagead2.googlesyndication.com/simgad/12109941488344692062' style='text-align:center;'>
-                                                    </td>
-                                                    <td class='expander'></td>
-                                                  </tr>
-                                                </table>
-                                              </td>
-                                            </tr>
-                                          </table>
-                                        </center>
+                                        <hr>
                                       </td>
                                     </tr>
                                   </table>
                                 </td>
                               </tr>
-                            </table>";
+                            </table>
+                            
+                            ";
                         }
                       } elseif ( $s == 3 ){
                         if ($assets[$a1] == $stories[$s]['assetId']){
                           echo " 
+
+                            <table class='container' style='width:600px; padding-bottom:10px;'>
+                              <tr>
+                                <td class='center' align='center'>
+                                  <center>
+                                    <table class='row'>
+                                      <tr>
+                                        <td class='wrapper last temp-pad'>
+                                          <table class='twelve columns'>
+                                            <tr>
+                                              <td class='center' align='center' style='padding-bottom:10px;'>
+                                                <img class='center' src='http://pagead2.googlesyndication.com/simgad/12109941488344692062' style='text-align:center;'>
+                                              </td>
+                                              <td class='expander'></td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </center>
+                                </td>
+                              </tr>
+                            </table>
                             <table class='container'>
                               <tr>
                                 <td>
-                                  <table class='row'>
+                                  <table class='row' style='width:600px; padding-bottom:10px;'>
                                     <tr>
-                                      <td class='wrapper'>
-                                        <table class='twelve columns'>
+                                      <td class='wrapper last temp-pad'>
+                                        <table class='twelve columns cards'>
                                           <tr>
-                                            <td class='left-text-pad' style='padding-bottom:2px;'>
-                                              <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
-                                              .
-                                              (($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))
-                                              .
-                                              "</h5>
+                                            <td style='padding-bottom:0px;'>
+                                              <div style='padding-top:3px; padding-bottom:3px; margin-bottom:2px; background-color:#0074BE;width:100%;'>
+                                                <h5 style='font-size:1.2em; color:#fff; display:inline-block; font-family:Tahoma, Geneva, sans-serif; padding-left:10px;'>".(($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))."</h5>
+                                              </div>
                                             </td>
                                           </tr>
-                                        </table>
-                                        <table class='twelve columns'>
                                           <tr>
-                                            <td class='left-text-pad'>
-                                              <h4 style='font-size:1.4em;padding-top:0px;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                                            <td class='left-text-pad' style='padding-top:10px;'>
+                                              <h4 style='font-size:1.4em;padding-top:0px;display:inline-block;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
                                               "
                                               .
                                               (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
                                               .
                                               "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
-                                              <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                                              <p><u><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>READ STORY</a></u></p>
                                             </td>
                                           </tr>
                                         </table>
+                                        <hr>
                                       </td>
                                     </tr>
                                   </table>
                                 </td>
                               </tr>
-                            </table>";
+                            </table>
+                            ";
                         }
                       } else {
                         if ($assets[$a1] == $stories[$s]['assetId']){
@@ -1246,39 +1252,36 @@ body.outlook p {
                             <table class='container'>
                               <tr>
                                 <td>
-                                  <table class='row'>
+                                  <table class='row' style='width:600px; padding-bottom:10px;'>
                                     <tr>
-                                    <td class='wrapper'>
-                                      <table class='twelve columns'>
+                                    <td class='wrapper last temp-pad'>
+                                      <table class='twelve columns cards'>
                                         <tr>
-                                          <td class='left-text-pad' style='padding-bottom:2px;'>
-                                            <h5 style='font-size:11px; display:inline-block; padding:2px 4px; margin-bottom:2px; background-color:#094078;color:#fff;font-weight:bold;font-family:Arial, Helvetica, sans-serif;'>"
-                                            .
-                                            (($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))
-                                            .
-                                            "</h5>
+                                          <td style='padding-bottom:0px;'>
+                                            <div style='padding-top:3px; padding-bottom:3px; margin-bottom:2px; background-color:#0074BE;width:100%;'>
+                                              <h5 style='font-size:1.2em; color:#fff; display:inline-block; font-family:Tahoma, Geneva, sans-serif; padding-left:10px;'>".(($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))."</h5>
+                                            </div>
                                           </td>
                                         </tr>
-                                      </table>
-                                      <table class='twelve columns'>
                                         <tr>
-                                          <td class='left-text-pad'>
-                                            <h4 style='font-size:1.4em;padding-top:0px;display:inline-block;'><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
+                                          <td class='left-text-pad' style='padding-top:10px;'>
+                                            <h4 style='font-size:1.4em;padding-top:0px;display:inline-block;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>".$stories[$s]['headline']."</a></h4>
                                             "
                                             .
                                             (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
                                             .
                                             "<p style='font-size:1.2em;'>".$stories[$s]['promoBrief']."</p>
-                                            <p><u><a href='".$stories[$s]['urls']['mobileUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>Read Story</a></u></p>
+                                            <p><u><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&utm_medium=email&utm_campaign=rockland_angle'>READ STORY</a></u></p>
                                           </td>
                                         </tr>
                                       </table>
+                                      <hr>
                                     </td>
-                                    </tr>
-                                  </table>
-                                </td>
-                              </tr>
-                            </table>";
+                                  </tr>
+                                </table>
+                              </td>
+                            </tr>
+                          </table>";
                         }
                       }
                     }
@@ -1290,44 +1293,103 @@ body.outlook p {
                 <table class="container" style="margin-bottom:15px; margin-top:15px; max-width:601px">
                   <tr>
                     <td>
-                      <table class="row">
+                      <table class="row" style='width:600px; background-color:#DCEAF8;'>
                         <tr>
-                          <td class="wrapper" style="padding-left:10px; padding-right:10px;">
-                            <table class="six columns">
+                          <td class="wrapper last temp-pad" style="padding-left:10px; padding-right:10px;">
+                            <table class="twelve columns hide-for-small">
                               <tr>
-                                <td class="left-text-pad">
-                                  <h5>Contact Us:</h5>
-                                  <table>
+                                <td class="left-text-pad" style='padding-top:10px;'>
+                                  <h5 style="font-size:1.4em; font-weight:bold;">CONTACT OR CONNECT:</h5>
+                                  <table class="twelve columns">
                                     <tr>
                                       <td>
-                                        <p>News: Robert Brum (<a href="http://www.twitter.com/Bee_Bob" target="_blank">@Bee_Bob</a>), <a href="mailto:rbrum@lohud.com">rbrum@lohud.com</a></p>
+                                        <b>News: </b>
+                                        <p style='margin-bottom:2px;'>Robert Brum</p>
+                                        <p style='margin-bottom:2px;'><a href="mailto:rbrum@lohud.com">rbrum@lohud.com</a></p> 
+                                        <p>Twitter (<a href="http://www.twitter.com/Bee_Bob" target="_blank">@Bee_Bob</a>)</p>
                                       </td>
-                                    </tr>
-                                  </table>
-                                  <table>
-                                    <tr>
                                       <td>
-                                        <p>Advertising: Greg Ferine, <a href="mailto:gferine@lohud.com">gferine@lohud.com</a></p>
+                                        <b>Advertising: </b>
+                                        <p style='margin-bottom:2px;'>Greg Ferine</p>
+                                        <p><a href="mailto:gferine@lohud.com">gferine@lohud.com</a></p>
+                                      </td>
+                                      <td>
+                                        <table class="three columns">
+                                          <tr>
+                                            <td style="width:23px !important;">
+                                              <a href="http://www.facebook.com/lohud"><img style="width:40px !important; padding-right:5px" src="http://data.lohud.com/newsletter/rocklandangle/FB.jpg"></a>
+                                            </td>
+                                            <td style="width:23px !important;">
+                                              <a href="http://www.twitter.com/lohud" ><img style="width:40px !important; padding-right:5px; max-width:none !important;" src="http://data.lohud.com/newsletter/rocklandangle/TTTR.jpg"></a>
+                                            </td>
+                                          </tr>
+                                        </table>
                                       </td>
                                     </tr>
                                   </table>
                                 </td>
                               </tr>
                             </table>
-                          </td>
-                          <td class="wrapper" style="padding-left:10px; padding-right:10px;">
-                            <table class="six columns">
+                            <table class="twelve columns hide-for-small">
                               <tr>
-                                <td class="left-text-pad">
-                                  <h5>Connect With Us:</h5>
-                                  <table>
+                                <td class="left-text-pad" style='padding-top:10px; padding-bottom:0px;'>
+                                  <h5 style="font-size:1.4em; font-weight:bold;">DATABASES:</h5>
+                                  <table class="twelve columns">
                                     <tr>
                                       <td>
-                                        <a href="http://www.facebook.com/lohud"><img style="width:45px !important; padding-right:5px" src="FB.png"></a>
+                                        <p style='margin-bottom:2px;'><a href='http://lohud.nydatabases.com/database/nys-restaurant-inspections?keywords=rockland'>>>Restaurant Inspections</a></p>
                                       </td>
                                       <td>
-                                        <a href="http://www.twitter.com/lohud" ><img style="width:45px !important; padding-right:5px; max-width:none !important;" src="TTTR.png"></a>
+                                        <p style='margin-bottom:2px;'><a href=''>>>Real Estate</a></p>
                                       </td>
+                                      <td>
+                                        <table class="three columns">
+                                          
+                                        </table>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <table class="twelve columns show-for-small">
+                              <tr>
+                                <td class="left-text-pad" style='padding-top:10px;'>
+                                  <h5>CONTACT OR CONNECT:</h5>
+                                  <table class="twelve columns">
+                                    <tr>
+                                        <b>News: </b>
+                                        <p style='margin-bottom:2px;'>Robert Brum</p>
+                                        <p style='margin-bottom:2px;'><a href="mailto:rbrum@lohud.com">rbrum@lohud.com</a></p> 
+                                        <p>Twitter (<a href="http://www.twitter.com/Bee_Bob" target="_blank">@Bee_Bob</a>)</p>
+                                    </tr>
+                                    <tr>
+                                        <b>Advertising: </b>
+                                        <p style='margin-bottom:2px;'>Greg Ferine</p>
+                                        <p><a href="mailto:gferine@lohud.com">gferine@lohud.com</a></p>
+                                    </tr>
+                                    <tr>
+                                      <td style="width:42px !important;">
+                                        <a href="http://www.facebook.com/lohud"><img style="width:40px !important; padding-right:5px" src="http://data.lohud.com/newsletter/rocklandangle/FB.jpg"></a>
+                                      </td>
+                                      <td style="width:42px !important;">
+                                        <a href="http://www.twitter.com/lohud" ><img style="width:40px !important; padding-right:5px; max-width:none !important;" src="http://data.lohud.com/newsletter/rocklandangle/TTTR.jpg"></a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            <table class="twelve columns show-for-small">
+                              <tr>
+                                <td class="left-text-pad" style='padding-top:10px;'>
+                                  <h5>DATABASES:</h5>
+                                  <table class="twelve columns">
+                                    <tr>
+                                        <p style='margin-bottom:2px;'><a href='http://lohud.nydatabases.com/database/nys-restaurant-inspections?keywords=rockland'>>>Restaurant Inspections</a></p> 
+                                    </tr>
+                                    <tr>
+                                        <p style='margin-bottom:2px;'><a href='http://lohud.nydatabases.com/database/lohud-real-estate?keywords=rockland'>>>Real Estate</a></p>
                                     </tr>
                                   </table>
                                 </td>
@@ -1343,14 +1405,13 @@ body.outlook p {
                   <tr>
                     <td class="center">
                       <center>
-                        <table class="container" style="background-color: #f2f2f2;">
+                        <table class="container" style="background-color: #9CC6E3;">
                           <tr>
                             <td class="wrapper" style="padding:0px;">
                               <table class="four columns">
                                   <tr>
                                     <td>
-                                        <p style="text-align:center;"><a href="https://account.lohud.com/newsletter-unsubscribe/?email=%%EmailAddr%%&listId=%%LISTID%%">Unsubscribe</a></p>
-
+                                        <p style="text-align:center;"><u><a style='color:#666 !important;' href="https://account.lohud.com/newsletter-unsubscribe/?email=%%EmailAddr%%&listId=%%LISTID%%">Unsubscribe</a></u></p>
                                     </td>
                                     <td class="expander"></td>
                                   </tr>
