@@ -98,7 +98,7 @@ textarea:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px 
 <div class="login">
   <h1><?php echo $appname; ?></h1>
   <div id="failedMessage"><?php echo $fail_message; ?></div>
-    <form name="postform" action="submit.php" method="post" enctype="multipart/form-data">
+    <form name="postform" action="submit.php" method="post" enctype="multipart/form-data" accept-charset="utf-8">
       <div class="row">
         <div class="large-12 columns" >
           <label style="color:#F2F2F2;">Chatter

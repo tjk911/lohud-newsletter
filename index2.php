@@ -1,3 +1,6 @@
+<?php
+header('Content-Type:text/html; charset=UTF-8');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -1028,17 +1031,24 @@ body.outlook p {
                   for ($i=0; $i < count($array1['layoutModules']); $i++){
                       for ($x=0; $x < count($array1['layoutModules'][$i]['contents']); $x++){
                           $assets[] = $array1['layoutModules'][$i]['contents'][$x]['id'];
+                          $headline[] = $array1['layoutModules'][$i]['contents'][$x]['headline'];
                       };
                   };
 
+                  $headlines = array_combine($assets, $headline);
+
                   $assets_comma_string = implode ("%20", $assets);
+                  // echo $assets[0];
+                  // echo $headlines[1];
+                  // print_r($headlines);
 
-
-                  if (time() - $filetime >= 60){
+                  if (time() - $filetime >= 30){
                     // echo 'Fresh';
                     $searchv4 = "http://api.gannett-cdn.com/prod/Search/v4/assets/proxy?fq=statusname:published&fq=sitecode:PWES&sc=PWES&apiKey=newsletter-search&debug=false&format=json&fq=assettypename:(text%20gallery)&fq=assetid:(".$assets_comma_string.")&format=json&api_key=".$api2;
+                    // echo $searchv4;
                     $json2 = file_get_contents($searchv4);
-                    $data2 = json_decode($json2, true);
+                    $cleanup = str_replace("’", "'", $json2);
+                    $data2 = json_decode($cleanup, true);
                     $save = file_put_contents('stories.json', serialize($data2['results']));
                     $stories = unserialize(file_get_contents('stories.json'));
                   } else {
@@ -1046,15 +1056,15 @@ body.outlook p {
                     $stories = unserialize(file_get_contents('stories.json'));
                   }
 
-                    // print_r($searchv4);
-
-
+                    print_r($searchv4);
+                    // print_r($stories);
 
 
                   for ( $a1 = 0; $a1 < count($assets); $a1++ ) {
                     for ( $s = 0; $s < count($stories); $s++ ) {
                       if ( $a1 == 0 ){
                         if ($assets[$a1] == $stories[$s]['assetId']) {
+                            $head = $headlines[$stories[$s]['assetId']];
                             echo " 
                             <table class='container'>
                               <tr>
@@ -1149,6 +1159,7 @@ body.outlook p {
                         }
                       } elseif ( $s == 2 ){
                         if ($assets[$a1] == $stories[$s]['assetId']){
+                          $head = $headlines[$stories[$s]['assetId']];
                            echo "
                            <table class='container'>
                               <tr>
@@ -1187,6 +1198,7 @@ body.outlook p {
                         }
                       } elseif ( $s == 3 ){
                         if ($assets[$a1] == $stories[$s]['assetId']){
+                          $head = $headlines[$stories[$s]['assetId']];
                           echo " 
 
                             <table class='container' style='width:600px; padding-bottom:10px;'>
@@ -1248,6 +1260,7 @@ body.outlook p {
                         }
                       } else {
                         if ($assets[$a1] == $stories[$s]['assetId']){
+                            $head = $headlines[$stories[$s]['assetId']];
                             echo "
                             <table class='container'>
                               <tr>

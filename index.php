@@ -1,3 +1,6 @@
+<?php
+header('Content-Type:text/html; charset=UTF-8');
+?>
 <!DOCTYPE html>
 <html style="margin: 0;line-height: 1;height: 100%;width: 100% !important;">
 <head style="margin: 0;">
@@ -983,27 +986,26 @@ body.outlook p {
                   </td>
                 </tr>
                 </table>
-                <table class='row' style='width: 600px;padding-bottom: 10px;margin: 0;border-spacing: 0;border-collapse: collapse;padding: 0px;vertical-align: top;text-align: left;position: relative;display: block;'>
-                  <tr style='margin: 0;padding: 0;vertical-align: top;text-align: left;'>
-                    <td class='center' align='center' style='margin: 0;word-wrap: normal; white-space: normal;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0;vertical-align: top;text-align: center;color: #222222;font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif;font-weight: normal;line-height: 19px;font-size: 14px;border-collapse: collapse !important;'>
-                      <center style='margin: 0;width: 100%;min-width: 580px;'>
-                        <table class='container' style='margin: 0 auto;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: inherit;width: 580px;background-color: #FFFFFF;'>
-                          <tr style='margin: 0;padding: 0;vertical-align: top;text-align: left;'>
-                            <td class='wrapper last temp-pad' style='margin: 0;word-wrap: normal; white-space: normal;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 10px 20px 0px 0px;vertical-align: top;text-align: left;color: #222222;font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif;font-weight: normal;line-height: 19px;font-size: 14px;position: relative;padding-right: 0px;border-collapse: collapse !important;padding-top: 0px !important;padding-left: 0px !important;'>
-                              <table class='twelve columns' style='margin: 0 auto;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;width: 580px;'>
-                                <tr style='margin: 0;padding: 0;vertical-align: top;text-align: left;'>
-                                  <td class='center' align='center' style='padding-bottom: 3px;margin: 0;word-wrap: normal; white-space: normal;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 10px 0px 10px;vertical-align: top;text-align: center;color: #222222;font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif;font-weight: normal;line-height: 19px;font-size: 14px;border-collapse: collapse !important;'>
-                                    <img class='center' src='http://pagead2.googlesyndication.com/simgad/12109941488344692062' style='text-align: center;margin: 0 auto;outline: none;text-decoration: none;-ms-interpolation-mode: bicubic;width: auto;max-width: 100%;float: none;clear: both;display: block;border: 0;'>
-                                  </td>
-                                  <td class='expander' style='margin: 0;word-wrap: normal; white-space: normal;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0 !important;vertical-align: top;text-align: left;color: #222222;font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif;font-weight: normal;line-height: 19px;font-size: 14px;visibility: hidden;width: 0px;border-collapse: collapse !important;'></td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-                      </center>
-                    </td>
-                  </tr>
+                <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; padding-bottom: 10px; text-align: inherit; vertical-align: top; width: 600px;'>
+                 <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
+                  <td align='center' class='center' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: center; vertical-align: top; word-wrap: normal; white-space: normal;'>
+                   <center style='margin: 0; min-width: 580px; width: 100%;'>
+                    <table class='row' style='border-collapse: collapse; border-spacing: 0; display: block; margin: 0; padding: 0px; position: relative; text-align: left; vertical-align: top; width: 100%;'>
+                     <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
+                      <td class='wrapper last temp-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 20px 0px 0px; padding-left: 10px ; padding-right: 0px; padding-top: 0px !important; position: relative; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
+                       <table class='twelve columns' style='border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px;'>
+                        <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
+                         <td align='center' class='center' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 10px; text-align: center; vertical-align: top; word-wrap: normal; white-space: normal;'><a href="http://offers.lohud.com/wsf"><img class='center' src='http://data.lohud.com/newsletter/rocklandangle/bannerad.JPG' style='border: 0; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;' /></a></td>
+                         <td class='expander' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-wrap: normal; white-space: normal;'>
+                         </td>
+                        </tr>
+                       </table>
+                      </td>
+                     </tr>
+                    </table>
+                   </center>
+                  </td>
+                 </tr>
                 </table>
               </td>
             </tr>
@@ -1028,9 +1030,10 @@ body.outlook p {
                   for ($i=0; $i < count($array1['layoutModules']); $i++){
                       for ($x=0; $x < count($array1['layoutModules'][$i]['contents']); $x++){
                           $assets[] = $array1['layoutModules'][$i]['contents'][$x]['id'];
+                          $headline[] = $array1['layoutModules'][$i]['contents'][$x]['headline'];
                       };
                   };
-
+                  $headlines = array_combine($assets, $headline);
                   $assets_comma_string = implode ("%20", $assets);
 
                   if (time() - $filetime >= 30){
@@ -1048,6 +1051,7 @@ body.outlook p {
                     for ( $s = 0; $s < count($stories); $s++ ) {
                       if ( $a1 == 0 ){
                         if ($assets[$a1] == $stories[$s]['assetId']) {
+                          $head = $headlines[$stories[$s]['assetId']];
                             echo " 
                             <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
                              <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
@@ -1076,7 +1080,7 @@ body.outlook p {
                                       <table class='seven columns' style='border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 330px;'>
                                        <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                         <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                                         <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-top: 10px; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$stories[$s]['headline']."</a></h4>  
+                                         <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-top: 10px; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$head."</a></h4>  
                                           "
                                           .
                                           (($stories[$s]['attribution']['author'] == null ) ? "" : "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><i style='font-size: .8em; margin: 0;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
@@ -1103,6 +1107,7 @@ body.outlook p {
                         }
                       } elseif ( $a1 == 1 ){
                         if ($assets[$a1] == $stories[$s]['assetId']){
+                          $head = $headlines[$stories[$s]['assetId']];
                              echo "
 
                             <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
@@ -1121,7 +1126,7 @@ body.outlook p {
                                    </tr>
                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                     <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$stories[$s]['headline']."</a></h4>
+                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$head."</a></h4>
                                       "
                                       .
                                       (($stories[$s]['attribution']['author'] == null ) ? "" : "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><i style='font-size: .8em; margin: 0;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
@@ -1141,6 +1146,7 @@ body.outlook p {
                         }
                       } elseif ( $a1 == 2 ){
                         if ($assets[$a1] == $stories[$s]['assetId']){
+                          $head = $headlines[$stories[$s]['assetId']];
                            echo "
                            <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
                              <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
@@ -1158,7 +1164,7 @@ body.outlook p {
                                    </tr>
                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                     <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$stories[$s]['headline']."</a></h4>
+                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$head."</a></h4>
                                       "
                                       .
                                       (($stories[$s]['attribution']['author'] == null ) ? "" : "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><i style='font-size: .8em; margin: 0;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
@@ -1179,6 +1185,7 @@ body.outlook p {
                         }
                       } elseif ( $a1 == 3 ){
                         if ($assets[$a1] == $stories[$s]['assetId']){
+                          $head = $headlines[$stories[$s]['assetId']];
                           echo " 
 
                             
@@ -1198,7 +1205,7 @@ body.outlook p {
                                    </tr>
                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                     <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$stories[$s]['headline']."</a></h4>
+                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$head."</a></h4>
                                               "
                                               .
                                               (($stories[$s]['attribution']['author'] == null ) ? "" : "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><i style='font-size: .8em; margin: 0;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
@@ -1219,6 +1226,7 @@ body.outlook p {
                         }
                       } else {
                         if ($assets[$a1] == $stories[$s]['assetId']){
+                          $head = $headlines[$stories[$s]['assetId']];
                             echo "
                             <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
                              <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
@@ -1236,7 +1244,7 @@ body.outlook p {
                                    </tr>
                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                     <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$stories[$s]['headline']."</a></h4>
+                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$head."</a></h4>
                                               "
                                             .
                                             (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
@@ -1267,7 +1275,7 @@ body.outlook p {
                   <td class='wrapper last temp-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 20px 0px 0px; padding-left: 10px ; padding-right: 0px; padding-top: 0px !important; position: relative; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
                    <table class='twelve columns' style='border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px;'>
                     <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-                     <td align='center' class='center' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 10px; text-align: center; vertical-align: top; word-wrap: normal; white-space: normal;'><img class='center' src='http://pagead2.googlesyndication.com/simgad/12109941488344692062' style='border: 0; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;' /></td>
+                     <td align='center' class='center' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 10px; text-align: center; vertical-align: top; word-wrap: normal; white-space: normal;'><a href="http://offers.lohud.com/wsf"><img class='center' src='http://data.lohud.com/newsletter/rocklandangle/bannerad.JPG' style='border: 0; clear: both; display: block; float: none; margin: 0 auto; max-width: 100%; outline: none; text-align: center; text-decoration: none; width: auto;' /></a></td>
                      <td class='expander' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-wrap: normal; white-space: normal;'>
                      </td>
                     </tr>
@@ -1320,7 +1328,7 @@ body.outlook p {
                           <p style='margin-bottom: 2px;margin: 0;color: #666;font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;font: 1em 'arial','helvetica',sans-serif;'><a href='http://lohud.nydatabases.com/database/nys-restaurant-inspections?keywords=rockland' style='margin: 0;color: #444;text-decoration: none;'>>>Restaurant Inspections</a></p>
                         </td>
                         <td style='margin: 0;word-wrap: normal; white-space: normal;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0px 0px 10px 10px;vertical-align: top;text-align: left;color: #222222;font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif;font-weight: normal;line-height: 19px;font-size: 14px;border-collapse: collapse !important;'>
-                          <p style='margin-bottom: 2px;margin: 0;color: #666;font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;font: 1em 'arial','helvetica',sans-serif;'><a href='' style='margin: 0;color: #444;text-decoration: none;'>>>Real Estate</a></p>
+                          <p style='margin-bottom: 2px;margin: 0;color: #666;font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif;font-weight: normal;padding: 0;text-align: left;line-height: 19px;font-size: 14px;font: 1em 'arial','helvetica',sans-serif;'><a href='http://lohud.nydatabases.com/database/lohud-real-estate?keywords=rockland' style='margin: 0;color: #444;text-decoration: none;'>>>Real Estate</a></p>
                         </td>
                         <td style='margin: 0;word-wrap: normal; white-space: normal;-webkit-hyphens: auto;-moz-hyphens: auto;hyphens: auto;padding: 0px 0px 10px;vertical-align: top;text-align: left;color: #222222;font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif;font-weight: normal;line-height: 19px;font-size: 14px;border-collapse: collapse !important;'>
                           <table class='three columns' style='margin: 0 auto;border-spacing: 0;border-collapse: collapse;padding: 0;vertical-align: top;text-align: left;width: 130px;'>
