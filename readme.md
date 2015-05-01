@@ -14,6 +14,8 @@ Project uses Zurb's Ink template for responsiveness. Uses Presto's PresentationV
 Changelog
 ==============
 
+v1.0.0 - Feature complete, included function to pull headline from front manager instead of story headline
+
 v0.1.2 - Added a check to limit API calls to once a minute at most, added character count and limit to admin, changed input to textarea
 
 v0.1.1 - Now uses PresentationV3 as the base to order the assets, and then matches with SearchV4 to populate the pages with the appropriate information. Admin page has been added, accessible through login.php
@@ -22,10 +24,6 @@ v0.1.1 - Now uses PresentationV3 as the base to order the assets, and then match
 To-do
 ==============
 
-* ~~Hardcode databases into a 2x2 table~~
-* Export pages once a day as html
-* If/else solution for content without images 
-* ~~Add social buttons~~
 * Privacy/TOS/Ad choices
 
 Contributors
