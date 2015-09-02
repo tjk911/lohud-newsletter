@@ -14,10 +14,10 @@ require ('authentication.php');
     <script>
       function countChar(val) {
         var len = val.value.length;
-        if (len >= 500) {
-          val.value = val.value.substring(0, 280);
+        if (len >= 720) {
+          val.value = val.value.substring(0, 720);
         } else {
-          $('#charNum').text(280 - len + ' characters remaining');
+          $('#charNum').text(720 - len + ' characters remaining');
         }
       };
     </script>
@@ -91,6 +91,10 @@ textarea:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px 
     margin-top:-5px;
     margin-bottom:5px;
 }
+
+a {
+  color: blue;
+}
 </style>
 </head>
 <body>
@@ -102,7 +106,7 @@ textarea:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px 
       <div class="row">
         <div class="large-12 columns" >
           <label style="color:#F2F2F2;">Chatter
-            <textarea rows="4" type="text" placeholder="Robert, type your chatter into this box." name="p1" style="margin-top:5px;" maxlength="280" onkeyup="countChar(this)" /></textarea>
+            <textarea rows="4" type="text" placeholder="Robert, type your chatter into this box." name="p1" style="margin-top:5px;" maxlength="720" onkeyup="countChar(this)" /></textarea>
           </label>
           <div id="charNum"></div>
         </div>

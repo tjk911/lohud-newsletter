@@ -1010,138 +1010,108 @@ body.outlook p {
               </td>
             </tr>
           </table>
-                
-          <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
-           <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-            <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-             <table class='row' style='border-collapse: collapse; border-spacing: 0; display: block; margin: 0; padding: 0px; padding-bottom: 10px; position: relative; text-align: left; vertical-align: top; width: 600px;'>
-              <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-               <td class='wrapper last temp-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 20px 0px 0px; padding-left: 10px ; padding-right: 0px; padding-top: 0px !important; position: relative; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                <table class='twelve columns cards' style='border: solid 1px; border-collapse: collapse; border-color: #888; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px;'>
-                 <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-                  <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 0px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                  <div style='background-color: #0074BE; margin: 0; margin-bottom: 2px; padding-bottom: 3px; padding-top: 3px; width: 100%;'>
-                    <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>NEWS</h5>
-                  </div>
-                 <table class='twelve columns' style='border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px;'>
-                  <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-                   <td class='wrapper last temp-pad hide-for-small' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px ; padding-right: 0px; padding-top: 0px !important; position: relative; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                    <table class='five columns' style='border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 230px;'>
-                     <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-                      <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'><img class='hide-for-small' src='http://www.gannett-cdn.com/-mm-/f7d85f610c6fec9e25cd9504d72dbb25dd375661/c=1-0-959-720&r=x404&c=534x401/local/-/media/2015/09/02/Westchester/Westchester/635767903306298453-Picture1.jpg' style='border: 0; clear: both; display: block; float: left; margin: 0; max-height: 240px; max-width: 100%; outline: none; padding-top: 15px; text-decoration: none; width: 260px;' /></td>
-                      <td class='expander' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-wrap: normal; white-space: normal;'>
-                      </td>
-                     </tr>
-                    </table>
-                   </td>
-                   <td class='wrapper last' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-right: 0px; position: relative; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                    <table class='seven columns' style='border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 330px;'>
-                     <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-                      <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                       <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-top: 10px; text-align: left; word-break: normal;'><a href='http://www.lohud.com/story/news/2015/09/02/after-initial-shock-st-anns-nyack-adjusts-st-pauls-merger/71516256/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>After initial shock, Nyack's St. Ann's adjusts to merger with St. Paul's</a></h4><p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><i style='font-size: .8em; margin: 0;'>Author: Robert Brum | rbrum@lohud.com</i></p><p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>Parish founded in 1869 on Jefferson Street now joins St. Paul's Church in Congers.<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='http://www.lohud.com/story/news/2015/09/02/after-initial-shock-st-anns-nyack-adjusts-st-pauls-merger/71516256/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
-                      </td>
-                      <td class='expander' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-wrap: normal; white-space: normal;'>
-                      </td>
-                     </tr>
-                    </table>
-                   </td>
-                  </tr>
-                 </table>
-                </td>
-               </tr>
-              </table>
-              <hr style='background-color: #d9d9d9; border: none; color: #d9d9d9; height: 1px; margin: 0;' />
-             </td>
-            </tr>
-           </table>
-          </td>
-         </tr>
-        </table>
-        <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
-         <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-          <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-           <table class='row' style='border-collapse: collapse; border-spacing: 0; display: block; margin: 0; padding: 0px; padding-bottom: 10px; position: relative; text-align: left; vertical-align: top; width: 600px;'>
-            <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-             <td class='wrapper last temp-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 20px 0px 0px; padding-left: 10px ; padding-right: 0px; padding-top: 0px !important; position: relative; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-              <table class='twelve columns cards' style='border: solid 1px; border-collapse: collapse; border-color: #888; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px;'>
-               <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-                <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 0px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                 <div style='background-color: #0074BE; margin: 0; margin-bottom: 2px; padding-bottom: 3px; padding-top: 3px; width: 100%;'>
-                  <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>NEWS</h5>
-                 </div>
-                </td>
-               </tr>
-               <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-                <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                 <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='http://www.lohud.com/story/news/2015/09/02/halfway-there-new-tappan-zee-bridge-hits-big-milestone/71516682/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>Halfway there: New Tappan Zee Bridge hits big milestone</a></h4><p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><i style='font-size: .8em; margin: 0;'>Khurram Saeed | ksaeed@lohud.com</i></p><p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>Two years after construction started on the new Tappan Zee Bridge, officials say the project is 50 percent complete.</p>
-                  <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='http://www.lohud.com/story/news/2015/09/02/halfway-there-new-tappan-zee-bridge-hits-big-milestone/71516682/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
-                </td>
-              </tr>
-            </table>
-            <!-- <hr> -->
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
-<table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
- <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-  <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-   <table class='row' style='border-collapse: collapse; border-spacing: 0; display: block; margin: 0; padding: 0px; padding-bottom: 10px; position: relative; text-align: left; vertical-align: top; width: 600px;'>
-    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-     <td class='wrapper last temp-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 20px 0px 0px; padding-left: 10px ; padding-right: 0px; padding-top: 0px !important; position: relative; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-      <table class='twelve columns cards' style='border: solid 1px; border-collapse: collapse; border-color: #888; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px;'>
-       <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-        <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 0px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-         <div style='background-color: #0074BE; margin: 0; margin-bottom: 2px; padding-bottom: 3px; padding-top: 3px; width: 100%;'>
-          <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>HEALTH</h5>
-         </div>
-        </td>
-       </tr>
-       <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-        <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-         <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='http://www.lohud.com/story/news/health/2015/09/02/bill-smoking-hotel-ban/71575272/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>Bill would ban smoking in N.Y. hotels</a></h4><p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><i style='font-size: .8em; margin: 0;'>Author: Jon Campbell | jcampbell1@gannett.com</i></p><p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>So far, the legislation does not have a sponsor in the Senate</p>
-          <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='http://www.lohud.com/story/news/health/2015/09/02/bill-smoking-hotel-ban/71575272/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
-        </td>
-      </tr>
-    </table>
-    <!-- <hr> -->
-  </td>
-</tr>
-</table>
-</td>
-</tr>
-</table>
-<table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
- <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-  <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-   <table class='row' style='border-collapse: collapse; border-spacing: 0; display: block; margin: 0; padding: 0px; padding-bottom: 10px; position: relative; text-align: left; vertical-align: top; width: 600px;'>
-    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-     <td class='wrapper last temp-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 20px 0px 0px; padding-left: 10px ; padding-right: 0px; padding-top: 0px !important; position: relative; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-      <table class='twelve columns cards' style='border: solid 1px; border-collapse: collapse; border-color: #888; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px;'>
-       <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-        <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 0px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-         <div style='background-color: #0074BE; margin: 0; margin-bottom: 2px; padding-bottom: 3px; padding-top: 3px; width: 100%;'>
-          <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>LIFE</h5>
-         </div>
-        </td>
-       </tr>
-       <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-        <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-         <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='http://www.lohud.com/story/life/2015/09/01/adult-kickball-league/71528308/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>Adult kickball league: Who says it's just for kids?</a></h4>
-                  <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><i style='font-size: .8em; margin: 0;'>Author: Kevin Phelan | kphelan@lohud.com</i></p><p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>Let your inner child run the bases with Rockland Boulders' adult kickball league</p>
-                  <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='http://www.lohud.com/story/life/2015/09/01/adult-kickball-league/71528308/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
-                </td>
-              </tr>
-            </table>
-            <!-- <hr> -->
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table>
+                  <?php
+                  $file = fopen("apikeys.txt", "r");
+                  while(! feof($file)) {
+                    $readarr = fgets($file);
+                    $readarr = explode('|',$readarr);
+                    $api1 = $readarr[0];
+                    $api2 = $readarr[1];
+                  }
+                  $json1 = file_get_contents("http://api-internal.usatoday.com/PresentationService/v3/sites/PWES/fronts/newsletter_rockland/layouts?apiKey=".$api1);
+                  // echo $json1;
+                  $array1 = json_decode($json1, true);
+                  $assets = array();
+                  $filename = 'stories.json';
+                  date_default_timezone_set('America/New_York');
+                  header('Content-Type: application/json');
+                  $filetime = filemtime($filename);
+
+
+                  for ($i=0; $i < count($array1['layoutModules']); $i++){
+                      for ($x=0; $x < count($array1['layoutModules'][$i]['contents']); $x++){
+                          $assets[] = $array1['layoutModules'][$i]['contents'][$x]['id'];
+                          $headline[] = $array1['layoutModules'][$i]['contents'][$x]['headline'];
+                      };
+                  };
+                  $headlines = array_combine($assets, $headline);
+                  $assets_comma_string = implode ("+", $assets);
+
+                  if (time() - $filetime >= 30){
+                    $searchv4 = "http://api.gannett-cdn.com/prod/Search/v4/assets/proxy?fq=statusname:published&fq=sitecode:PWES&sc=PWES&apiKey=newsletter-search&debug=false&format=json&fq=assettypename:(text%20gallery%20video)&fq=assetid:(".$assets_comma_string.")&format=json&api_key=".$api2;
+                    $json2 = file_get_contents($searchv4);
+                    // echo $searchv4;
+                    $cleanup = str_replace("’", "'", $json2);
+                    $data2 = json_decode($cleanup, true);
+                    $save = file_put_contents('stories.json', serialize($data2['results']));
+                    $stories = unserialize(file_get_contents('stories.json'));
+                  } else {
+                    $stories = unserialize(file_get_contents('stories.json'));
+                  }
+
+                  for ( $a1 = 0; $a1 < count($assets); $a1++ ) {
+                    for ( $s = 0; $s < count($stories); $s++ ) {
+                      if ( $a1 == 0 ){
+                        if ($assets[$a1] == $stories[$s]['assetId']) {
+                          $head = $headlines[$stories[$s]['assetId']];
+                            echo " 
+                            <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
+                             <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
+                              <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
+                               <table class='row' style='border-collapse: collapse; border-spacing: 0; display: block; margin: 0; padding: 0px; padding-bottom: 10px; position: relative; text-align: left; vertical-align: top; width: 600px;'>
+                                <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
+                                 <td class='wrapper last temp-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 20px 0px 0px; padding-left: 10px ; padding-right: 0px; padding-top: 0px !important; position: relative; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
+                                  <table class='twelve columns cards' style='border: solid 1px; border-collapse: collapse; border-color: #888; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px;'>
+                                   <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
+                                    <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 0px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
+                                    <div style='background-color: #0074BE; margin: 0; margin-bottom: 2px; padding-bottom: 3px; padding-top: 3px; width: 100%;'>
+                                      <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>".(($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))."</h5>
+                                    </div>
+                                   <table class='twelve columns' style='border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px;'>
+                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
+                                     <td class='wrapper last temp-pad hide-for-small' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px ; padding-right: 0px; padding-top: 0px !important; position: relative; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
+                                      <table class='five columns' style='border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 230px;'>
+                                       <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
+                                        <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'><img class='hide-for-small' src='".$stories[$s]['photo']['crops']['front_thumb']."' style='border: 0; clear: both; display: block; float: left; margin: 0; max-height: 240px; max-width: 100%; outline: none; padding-top: 15px; text-decoration: none; width: 260px;' /></td>
+                                        <td class='expander' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-wrap: normal; white-space: normal;'>
+                                        </td>
+                                       </tr>
+                                      </table>
+                                     </td>
+                                     <td class='wrapper last' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-right: 0px; position: relative; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
+                                      <table class='seven columns' style='border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 330px;'>
+                                       <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
+                                        <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
+                                         <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-top: 10px; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$head."</a></h4>  
+                                          "
+                                          .
+                                          (($stories[$s]['attribution']['author'] == null ) ? "" : "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><i style='font-size: .8em; margin: 0;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                                          .
+                                          "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>".$stories[$s]['promoBrief']."<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
+                                        </td>
+                                        <td class='expander' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; text-align: left; vertical-align: top; visibility: hidden; width: 0px; word-wrap: normal; white-space: normal;'>
+                                        </td>
+                                       </tr>
+                                      </table>
+                                     </td>
+                                    </tr>
+                                   </table>
+                                  </td>
+                                 </tr>
+                                </table>
+                                <hr style='background-color: #d9d9d9; border: none; color: #d9d9d9; height: 1px; margin: 0;' />
+                               </td>
+                              </tr>
+                             </table>
+                            </td>
+                           </tr>
+                          </table>";
+                        }
+                      } elseif ( $a1 == 1 ){
+                        if ($assets[$a1] == $stories[$s]['assetId']){
+                          $head = $headlines[$stories[$s]['assetId']];
+                             echo "
+
                             <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
                              <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                               <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
@@ -1152,25 +1122,35 @@ body.outlook p {
                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                     <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 0px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
                                      <div style='background-color: #0074BE; margin: 0; margin-bottom: 2px; padding-bottom: 3px; padding-top: 3px; width: 100%;'>
-                                      <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>POLITICS</h5>
+                                      <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>".(($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))."</h5>
                                      </div>
                                     </td>
                                    </tr>
                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                     <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='http://www.lohud.com/story/news/politics/2015/09/02/judge-delhomme-car-purchase-ruling/71518536/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>Judge: Delhomme's car purchase illegal, board must cover legal fees</a></h4><p><i style='font-size:.8em;'>Author: Steve Lieberman | slieberm@lohud.com</i></p><p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>Judge rules Spring Valley Mayor Demeza Delhomme's car purchase was illegal but that trustees must pay his legal fees</p>
-                                            <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='http://www.lohud.com/story/news/politics/2015/09/02/judge-delhomme-car-purchase-ruling/71518536/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                      <!-- <hr> -->
+                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$head."</a></h4>
+                                      "
+                                      .
+                                      (($stories[$s]['attribution']['author'] == null ) ? "" : "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><i style='font-size: .8em; margin: 0;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                                      .
+                                      "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>".$stories[$s]['promoBrief']."</p>
+                                      <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
                                     </td>
                                   </tr>
                                 </table>
+                                <!-- <hr> -->
                               </td>
                             </tr>
                           </table>
-                          <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
+                        </td>
+                      </tr>
+                    </table>";
+                        }
+                      } elseif ( $a1 == 2 ){
+                        if ($assets[$a1] == $stories[$s]['assetId']){
+                          $head = $headlines[$stories[$s]['assetId']];
+                           echo "
+                           <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
                              <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                               <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
                                <table class='row' style='border-collapse: collapse; border-spacing: 0; display: block; margin: 0; padding: 0px; padding-bottom: 10px; position: relative; text-align: left; vertical-align: top; width: 600px;'>
@@ -1180,25 +1160,38 @@ body.outlook p {
                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                     <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 0px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
                                      <div style='background-color: #0074BE; margin: 0; margin-bottom: 2px; padding-bottom: 3px; padding-top: 3px; width: 100%;'>
-                                      <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>HIGH SCHOOL</h5>
+                                      <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>".(($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))."</h5>
                                      </div>
                                     </td>
                                    </tr>
                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                     <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='http://www.lohud.com/story/sports/high-school/lohud-girls-soccer/2015/09/01/albertus-magnus-beats-valhalla-opener-carly-clintons-late-goal/71548828/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>Albertus Magnus beats Valhalla in opener with Carly Clinton's late goal</a></h4><p><i style='font-size:.8em;'>Author: Adrian Szkolar | aszkolar@lohud.com</i></p><p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>Senior forward scores in the 72nd minute to give the Falcons a 1-0 win to open the season.</p>
-                                            <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='http://www.lohud.com/story/sports/high-school/lohud-girls-soccer/2015/09/01/albertus-magnus-beats-valhalla-opener-carly-clintons-late-goal/71548828/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                      <!-- <hr> -->
+                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$head."</a></h4>
+                                      "
+                                      .
+                                      (($stories[$s]['attribution']['author'] == null ) ? "" : "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><i style='font-size: .8em; margin: 0;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                                      .
+                                      "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>".$stories[$s]['promoBrief']."</p>
+                                      <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
                                     </td>
                                   </tr>
                                 </table>
+                                <!-- <hr> -->
                               </td>
                             </tr>
                           </table>
-                          <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
+                        </td>
+                      </tr>
+                    </table>
+                            ";
+                        }
+                      } elseif ( $a1 == 3 ){
+                        if ($assets[$a1] == $stories[$s]['assetId']){
+                          $head = $headlines[$stories[$s]['assetId']];
+                          echo " 
+
+                            
+                            <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
                              <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                               <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
                                <table class='row' style='border-collapse: collapse; border-spacing: 0; display: block; margin: 0; padding: 0px; padding-bottom: 10px; position: relative; text-align: left; vertical-align: top; width: 600px;'>
@@ -1208,25 +1201,36 @@ body.outlook p {
                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                     <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 0px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
                                      <div style='background-color: #0074BE; margin: 0; margin-bottom: 2px; padding-bottom: 3px; padding-top: 3px; width: 100%;'>
-                                      <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>NEWS</h5>
+                                      <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>".(($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))."</h5>
                                      </div>
                                     </td>
                                    </tr>
                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                     <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='http://www.lohud.com/story/news/2015/08/31/who-we-national-council-jewish-women-rockland-section/32359507/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>Who we are: National Council of Jewish Women, Rockland Section</a></h4><p><b style='font-size:.8em;'>The Journal News</b></p><p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>Who we are: National Council of Jewish Women, Rockland Section</p>
-                                            <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='http://www.lohud.com/story/news/2015/08/31/who-we-national-council-jewish-women-rockland-section/32359507/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                      <!-- <hr> -->
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
-                          <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
+                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$head."</a></h4>
+                                              "
+                                              .
+                                              (($stories[$s]['attribution']['author'] == null ) ? "" : "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><i style='font-size: .8em; margin: 0;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                                              .
+                                              "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>".$stories[$s]['promoBrief']."</p>
+                                              <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
+                                            </td>
+                                          </tr>
+                                        </table>
+                                        <!-- <hr> -->
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+                            ";
+                        }
+                      } else {
+                        if ($assets[$a1] == $stories[$s]['assetId']){
+                          $head = $headlines[$stories[$s]['assetId']];
+                            echo "
+                            <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
                              <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                               <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
                                <table class='row' style='border-collapse: collapse; border-spacing: 0; display: block; margin: 0; padding: 0px; padding-bottom: 10px; position: relative; text-align: left; vertical-align: top; width: 600px;'>
@@ -1236,14 +1240,19 @@ body.outlook p {
                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                     <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 0px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
                                      <div style='background-color: #0074BE; margin: 0; margin-bottom: 2px; padding-bottom: 3px; padding-top: 3px; width: 100%;'>
-                                      <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>GALLERY</h5>
+                                      <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>".(($stories[$s]['ssts']['subTopic'] == null) ? ($stories[$s]['ssts']['topic'] == null) ? ($stories[$s]['ssts']['subSection'] == null) ? strtoupper($stories[$s]['ssts']['section']) : strtoupper($stories[$s]['ssts']['subSection']) : strtoupper($stories[$s]['ssts']['topic']) : strtoupper($stories[$s]['ssts']['subTopic']))."</h5>
                                      </div>
                                     </td>
                                    </tr>
                                    <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
                                     <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='http://www.lohud.com/picture-gallery/sports/2015/09/01/nyack-defeats-north-rockland-3-1-in-boys-soccer/71554912/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>Nyack defeats North Rockland 3-1 in boys soccer</a></h4><p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'></p>
-                                            <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='http://www.lohud.com/picture-gallery/sports/2015/09/01/nyack-defeats-north-rockland-3-1-in-boys-soccer/71554912/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>SEE GALLERY</a></u></p>
+                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>".$head."</a></h4>
+                                              "
+                                            .
+                                            (($stories[$s]['attribution']['author'] == null ) ? "" : "<p><i style='font-size:.8em;'>Author: ".$stories[$s]['attribution']['author']." | ".$stories[$s]['attribution']['publication']."</i></p>")
+                                            .
+                                            "<p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>".$stories[$s]['promoBrief']."</p>
+                                            <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='".$stories[$s]['urls']['longUrl']."?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
                                           </td>
                                         </tr>
                                       </table>
@@ -1253,35 +1262,12 @@ body.outlook p {
                                 </table>
                               </td>
                             </tr>
-                          </table>
-                          <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; text-align: inherit; vertical-align: top; width: 580px;'>
-                             <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-                              <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                               <table class='row' style='border-collapse: collapse; border-spacing: 0; display: block; margin: 0; padding: 0px; padding-bottom: 10px; position: relative; text-align: left; vertical-align: top; width: 600px;'>
-                                <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-                                 <td class='wrapper last temp-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 10px 20px 0px 0px; padding-left: 10px ; padding-right: 0px; padding-top: 0px !important; position: relative; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                                  <table class='twelve columns cards' style='border: solid 1px; border-collapse: collapse; border-color: #888; border-spacing: 0; margin: 0 auto; padding: 0; text-align: left; vertical-align: top; width: 580px;'>
-                                   <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-                                    <td style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-bottom: 0px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                                     <div style='background-color: #0074BE; margin: 0; margin-bottom: 2px; padding-bottom: 3px; padding-top: 3px; width: 100%;'>
-                                      <h5 style='color: #fff; display: inline-block; font-family: Tahoma, Geneva, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; padding-left: 10px; text-align: left; word-break: normal;'>BASEBALL</h5>
-                                     </div>
-                                    </td>
-                                   </tr>
-                                   <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
-                                    <td class='left-text-pad' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0px 0px 10px; padding-left: 10px; padding-right: 10px; padding-top: 10px; text-align: left; vertical-align: top; word-wrap: normal; white-space: normal;'>
-                                     <h4 style='color: #333; display: inline-block; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.4em; font-weight: normal; line-height: 1.3; margin: 0; padding: 0; text-align: left; word-break: normal;'><a href='http://www.lohud.com/story/sports/baseball/rockland-boulders/2015/09/01/ottawa-champions-edges-rockland-boulders/71554320/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>Ottawa Champions edges Rockland Boulders</a></h4><p><i style='font-size:.8em;'>Author: Debbie Schechter | dschecht@lohud.com</i></p><p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 1.2em; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'>Five unanswered runs gave the Ottawa Champions the 6-5 win over Rockland Tuesday night at Provident Bank Park.</p>
-                                            <p style='color: #666; font: 1em 'arial','helvetica',sans-serif; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; line-height: 19px; margin: 0; margin-bottom: 10px; padding: 0; text-align: left;'><u style='margin: 0;'><a href='http://www.lohud.com/story/sports/baseball/rockland-boulders/2015/09/01/ottawa-champions-edges-rockland-boulders/71554320/?utm_source=newsletter&amp;utm_medium=email&amp;utm_campaign=rockland_angle' style='color: #444; margin: 0; text-decoration: none;'>READ STORY</a></u></p>
-                                          </td>
-                                        </tr>
-                                      </table>
-                                      <!-- <hr> -->
-                                    </td>
-                                  </tr>
-                                </table>
-                              </td>
-                            </tr>
-                          </table>
+                          </table>";
+                        }
+                      }
+                    }
+                  };
+                  ?>
             <table class='container' style='background-color: #FFFFFF; border-collapse: collapse; border-spacing: 0; margin: 0 auto; padding: 0; padding-bottom: 10px; text-align: inherit; vertical-align: top; width: 600px;'>
              <tr style='margin: 0; padding: 0; text-align: left; vertical-align: top;'>
               <td align='center' class='center' style='border-collapse: collapse !important; color: #222222; font-family: &quot;Tahoma&quot;, &quot;Geneva&quot;, sans-serif; font-size: 14px; font-weight: normal; hyphens: auto; line-height: 19px; margin: 0; padding: 0; text-align: center; vertical-align: top; word-wrap: normal; white-space: normal;'>
