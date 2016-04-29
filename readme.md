@@ -9,10 +9,12 @@ Current live version viewable here: http://data.lohud.com/newsletter/rocklandang
 Project code
 ==============
 
-Project uses Zurb's Ink template for responsiveness. Uses Presto's PresentationV3 api to find the asset IDs of pinned stories on the front, then runs those asset IDs through Presto's SearchV4 api to pull actual information and echo it out onto a static page.
+Project uses Zurb's Ink template for responsiveness. Uses Presto's V4
 
 Changelog
 ==============
+
+v2.0.0 - Code has been majorly reworked, API use changed from SearchV4 + PresentationV3 to straight use of PresentationV4. 
 
 v1.0.0 - Feature complete, included function to pull headline from front manager instead of story headline
 
